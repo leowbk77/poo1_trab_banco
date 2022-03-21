@@ -4,8 +4,8 @@ import java.util.Calendar;
 
 public class Gerente extends Funcionario{
 
-    public Gerente(String nome, String cpf, int numFuncional, String fone, Calendar admissao){
-        super(nome, cpf, numFuncional, fone, admissao);
+    public Gerente(String nome, String cpf, String fone, Calendar admissao, Calendar tempoServico) {
+        super(nome, cpf, fone, admissao, tempoServico);
     }
 
     public void tempMethod(int temp){

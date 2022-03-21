@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87eda37a-d97e-486c-9253-06d72270e4d5" name="Changes" comment="" />
+    <list default="true" id="87eda37a-d97e-486c-9253-06d72270e4d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_17_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_17_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_17_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_17_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_17_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_17_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_17_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_17_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo1_trab_banco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/poo1_trab_banco.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Agencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Agencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cupom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cupom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Gerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/OpBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/OpBancaria.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +37,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26CsrHWGACxQrIXho68r6nggJqT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +47,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trab.poo1_trab_banco.HelloApplication" />
+      <module name="poo1_trab_banco" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trab.poo1_trab_banco.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,10 +85,22 @@
       <workItem from="1646939102648" duration="950000" />
       <workItem from="1647281893628" duration="2742000" />
       <workItem from="1647625778169" duration="5333000" />
+      <workItem from="1647896257052" duration="2848000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

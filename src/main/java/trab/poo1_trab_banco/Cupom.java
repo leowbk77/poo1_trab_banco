@@ -1,13 +1,13 @@
 package trab.poo1_trab_banco;
 
-import java.util.Calendar;
+import java.time.ZonedDateTime;
 
 public class Cupom {
     public int numCupom;
-    public Calendar validade;
+    public ZonedDateTime validade;
 
-    public Cupom(int numCupom, Calendar validade){
+    public Cupom(int numCupom){
         this.numCupom = numCupom;
-        this.validade = validade;
+//        this.validade
     }
 }

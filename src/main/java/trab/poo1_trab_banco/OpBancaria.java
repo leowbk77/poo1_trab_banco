@@ -1,21 +1,20 @@
 package trab.poo1_trab_banco;
 
-import java.util.Calendar;
+import java.time.ZonedDateTime;
 
 public class OpBancaria {
-    private int numOp;
-    private double valor;
+    private String tipo;
     private String descricao;
+    private double valor;
+    private int idContaCorrente;
 
-    private Calendar data;
-    // private Conta tipo; ?
+    private ZonedDateTime data;
 
-    public OpBancaria(int numOp, double valor, String descricao, Calendar data){
+    public OpBancaria(String tipo, String descricao, double valor, int idContaCorrente) {
+        this.tipo = tipo;
         this.descricao = descricao;
         this.valor = valor;
-        this.numOp = numOp;
-        this.data = data;
+        this.idContaCorrente = idContaCorrente;
+        this.data = ZonedDateTime.now();
     }
-
-
 }
