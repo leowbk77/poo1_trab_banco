@@ -41,4 +41,16 @@ public abstract class Conta {
     public void setUltimoAcesso(ZonedDateTime ultimoAcesso) {
         this.ultimoAcesso = ultimoAcesso;
     }
+
+    public void sacar(double valor) {
+        if (valor <= this.saldo) {
+            this.saldo -= valor;
+            this.ultimoAcesso = ZonedDateTime.now();
+        }
+    }
+
+    public void depositar(double valor) {
+        this.saldo += valor;
+        this.ultimoAcesso = ZonedDateTime.now();
+    }
 }

@@ -1,6 +1,6 @@
 package trab.poo1_trab_banco;
 
-import java.util.Calendar;
+import java.time.ZonedDateTime;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -10,12 +10,12 @@ public class Funcionario extends Pessoa{
 
     protected LinkedList<String> dependentes;
     protected Funcionario supervisor;
-    protected Calendar tempoServico;
-    protected Calendar admissao;
+    protected ZonedDateTime tempoServico;
+    protected ZonedDateTime admissao;
 
     private Random aux = new Random();
 
-    public Funcionario(String nome, String cpf, String fone, Calendar admissao, Calendar tempoServico){
+    public Funcionario(String nome, String cpf, String fone, ZonedDateTime admissao, ZonedDateTime tempoServico){
         super(nome, cpf);
         this.numFuncional = aux.nextInt(10000);
         this.fone = fone;
@@ -29,12 +29,12 @@ public class Funcionario extends Pessoa{
         this.supervisor = supervisor;
     }
 
-    public int getTempoServico(){
-        /* TEMPORARIO //
-        // (alterar)  */
-        Calendar temp = Calendar.getInstance(); // pega o tempo atual
-        return temp.get(Calendar.YEAR) - admissao.get(Calendar.YEAR); // faz a diferenca dos anos e retorna
-    }
+//    public int getTempoServico(){
+//        /* TEMPORARIO //
+//        // (alterar)  */
+//        Calendar temp = Calendar.getInstance(); // pega o tempo atual
+//        return temp.get(Calendar.YEAR) - admissao.get(Calendar.YEAR); // faz a diferenca dos anos e retorna
+//    }
 
     public String getFone() {
         return fone;
@@ -56,15 +56,19 @@ public class Funcionario extends Pessoa{
         return supervisor;
     }
 
-    public void setTempoServico(Calendar tempoServico) {
+    public ZonedDateTime getTempoServico() {
+        return tempoServico;
+    }
+
+    public void setTempoServico(ZonedDateTime tempoServico) {
         this.tempoServico = tempoServico;
     }
 
-    public Calendar getAdmissao() {
+    public ZonedDateTime getAdmissao() {
         return admissao;
     }
 
-    public void setAdmissao(Calendar admissao) {
+    public void setAdmissao(ZonedDateTime admissao) {
         this.admissao = admissao;
     }
 }

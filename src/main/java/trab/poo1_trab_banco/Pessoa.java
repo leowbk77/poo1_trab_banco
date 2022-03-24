@@ -1,11 +1,11 @@
 package trab.poo1_trab_banco;
 
-import java.util.Calendar;
+import java.time.ZonedDateTime;
 
 public abstract class Pessoa {
     protected String nome;
     protected String cpf;
-    protected Calendar nascimento;
+    protected ZonedDateTime nascimento;
 
     public Pessoa(String nome, String cpf){
         this.nome = nome;
@@ -20,7 +20,19 @@ public abstract class Pessoa {
         this.cpf = cpf;
     }
 
-    public void setNascimento(Calendar nascimento) {
+    public void setNascimento(ZonedDateTime nascimento) {
         this.nascimento = nascimento;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public ZonedDateTime getNascimento() {
+        return nascimento;
     }
 }

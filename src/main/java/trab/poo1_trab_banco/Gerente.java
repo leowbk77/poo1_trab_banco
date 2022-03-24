@@ -1,10 +1,10 @@
 package trab.poo1_trab_banco;
 
-import java.util.Calendar;
+import java.time.ZonedDateTime;
 
 public class Gerente extends Funcionario{
 
-    public Gerente(String nome, String cpf, String fone, Calendar admissao, Calendar tempoServico) {
+    public Gerente(String nome, String cpf, String fone, ZonedDateTime admissao, ZonedDateTime tempoServico) {
         super(nome, cpf, fone, admissao, tempoServico);
     }
 
