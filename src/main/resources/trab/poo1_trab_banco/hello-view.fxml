@@ -13,6 +13,9 @@
     <Label fx:id="welcomeText" prefHeight="39.0" prefWidth="228.0" text="fon" textAlignment="CENTER">
       <font>
          <Font size="23.0" />
-      </font></Label>
+      </font>
+    </Label>
+
     <Button onAction="#onHelloButtonClick" prefHeight="124.0" prefWidth="230.0" text="Hello!" />
+
 </VBox>
