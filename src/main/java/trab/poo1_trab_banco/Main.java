@@ -55,6 +55,7 @@ public class Main extends Application {
 
         // Criando gerentes localmente
         Gerente gerente1 = new Gerente("Camila", "522.912.544-12", "(34) 99778-1251", ZonedDateTime.now(), 10);
+        gerentes.add(gerente1);
 
         // comentar a linha do launch para impedir de rodar a UI
         launch();
