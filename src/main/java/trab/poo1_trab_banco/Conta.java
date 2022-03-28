@@ -10,6 +10,7 @@ public abstract class Conta {
     protected double saldo;
     protected ZonedDateTime ultimoAcesso;
     protected LinkedList<Cupom> cupons;
+    protected LinkedList<OpBancaria> operacoes;
 
     private Random aux = new Random();
 
@@ -19,6 +20,7 @@ public abstract class Conta {
         this.numIdentificacao = aux.nextInt(10000);
         this.ultimoAcesso = ZonedDateTime.now();
         this.cupons = new LinkedList<>();
+        this.operacoes = new LinkedList<>();
     }
 
     public ZonedDateTime getDtCriacao() {
@@ -49,9 +51,10 @@ public abstract class Conta {
         return this.cupons;
     }
 
-    public void sacar(double valor) {
+    public void sacar(double valor, String tipo, String descricao) {
         if (valor <= this.saldo) {
             this.saldo -= valor;
+            operacoes.add(new OpBancaria(tipo, descricao, valor, numIdentificacao));
             this.ultimoAcesso = ZonedDateTime.now();
             if (valor > 5000) {
                 cupons.add(new Cupom());
@@ -59,8 +62,9 @@ public abstract class Conta {
         }
     }
 
-    public void depositar(double valor) {
+    public void depositar(double valor, String tipo, String descricao) {
         this.saldo += valor;
+        operacoes.add(new OpBancaria(tipo, descricao, valor, numIdentificacao));
         this.ultimoAcesso = ZonedDateTime.now();
         if (valor > 5000) {
             cupons.add(new Cupom());
