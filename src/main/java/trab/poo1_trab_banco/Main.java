@@ -1,9 +1,26 @@
 package trab.poo1_trab_banco;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 
-public class Main {
+public class Main extends Application {
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Tela-teste.fxml"));
+        Scene cena = new Scene(fxmlLoader.load(), 800, 600);
+        stage.setTitle("UmTitulo");
+        stage.setScene(cena);
+
+        stage.show();
+    }
+
     public static void main(String[] args) {
         ArrayList<Agencia> agencias = new ArrayList<>();
         ArrayList<Cliente> clientes = new ArrayList<>();
@@ -38,5 +55,8 @@ public class Main {
 
         // Criando gerentes localmente
         Gerente gerente1 = new Gerente("Camila", "522.912.544-12", "(34) 99778-1251", ZonedDateTime.now(), 10);
+
+        // comentar a linha do launch para impedir de rodar a UI
+        launch();
     }
 }

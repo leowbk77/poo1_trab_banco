@@ -6,8 +6,8 @@ public class Cupom {
     public int numCupom;
     public ZonedDateTime validade;
 
-    public Cupom(int numCupom){
+    public Cupom(int numCupom, ZonedDateTime validade){
         this.numCupom = numCupom;
-//        this.validade
+        this.validade = validade;
     }
 }

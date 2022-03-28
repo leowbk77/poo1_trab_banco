@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trab.poo1_trab_banco.TesteControl">
+   <children>
+      <HBox prefHeight="97.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="labelteste" prefHeight="96.0" prefWidth="525.0" text="como altera afonte?" />
+            <Button mnemonicParsing="false" onAction="#botaoClick" prefHeight="59.0" prefWidth="146.0" text="Socorro">
+               <HBox.margin>
+                  <Insets right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+      <HBox prefHeight="150.0" prefWidth="600.0" />
+      <AnchorPane prefHeight="153.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="campodetxt" layoutX="132.0" layoutY="14.0" prefHeight="1.0" prefWidth="168.0" promptText="teste" />
+            <TextField fx:id="campodetxt1" layoutX="132.0" layoutY="52.0" prefHeight="25.0" prefWidth="168.0" promptText="teste" />
+            <PasswordField layoutX="312.0" layoutY="14.0" promptText="teste psswd" />
+            <Button onAction="#metodoqualquer" layoutX="312.0" layoutY="52.0" mnemonicParsing="false" text="Limpar" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
