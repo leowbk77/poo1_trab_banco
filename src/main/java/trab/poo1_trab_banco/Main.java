@@ -22,17 +22,21 @@ public class Main {
         Cliente cliente1 = new Cliente("Lucas", "123.456.789-00", ZonedDateTime.now(), "Bebedouro", "SP", "Rua São João 412");
         Cliente cliente2 = new Cliente("Leonardo", "234.567.890-10", ZonedDateTime.now(), "Uberlândia", "MG", "Avenida João Naves 525");
         Cliente cliente3 = new Cliente("Rafael", "345.678.910-20", ZonedDateTime.now(), "São Paulo", "SP", "Rua Palestra Itália 819");
+
+        cliente1.criarContaCorrente(1500, 12.5);
+        cliente2.criarContaPoupanca(5211, 7.5);
+
         clientes.add(cliente1);
         clientes.add(cliente2);
         clientes.add(cliente3);
 
         // Criando funcionários localmente
-        Funcionario funcionario1 = new Funcionario("João Pedro", "987.541.321-12", "(11) 99151-4231", ZonedDateTime.now(), ZonedDateTime.now());
-        Funcionario funcionario2 = new Funcionario("Gisele", "514.997.123-44", "(34) 99812-5411", ZonedDateTime.now(), ZonedDateTime.now());
+        Funcionario funcionario1 = new Funcionario("João Pedro", "987.541.321-12", "(11) 99151-4231", ZonedDateTime.now(), 1);
+        Funcionario funcionario2 = new Funcionario("Gisele", "514.997.123-44", "(34) 99812-5411", ZonedDateTime.now(), 3);
         funcionarios.add(funcionario1);
         funcionarios.add(funcionario2);
 
         // Criando gerentes localmente
-        Gerente gerente1 = new Gerente("Camila", "522.912.544-12", "(34) 99778-1251", ZonedDateTime.now(), ZonedDateTime.now());
+        Gerente gerente1 = new Gerente("Camila", "522.912.544-12", "(34) 99778-1251", ZonedDateTime.now(), 10);
     }
 }

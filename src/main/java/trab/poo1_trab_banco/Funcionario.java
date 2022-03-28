@@ -10,12 +10,12 @@ public class Funcionario extends Pessoa{
 
     protected LinkedList<String> dependentes;
     protected Funcionario supervisor;
-    protected ZonedDateTime tempoServico;
+    protected int tempoServico;
     protected ZonedDateTime admissao;
 
     private Random aux = new Random();
 
-    public Funcionario(String nome, String cpf, String fone, ZonedDateTime admissao, ZonedDateTime tempoServico){
+    public Funcionario(String nome, String cpf, String fone, ZonedDateTime admissao, int tempoServico){
         super(nome, cpf);
         this.numFuncional = aux.nextInt(10000);
         this.fone = fone;
@@ -56,11 +56,11 @@ public class Funcionario extends Pessoa{
         return supervisor;
     }
 
-    public ZonedDateTime getTempoServico() {
+    public int getTempoServico() {
         return tempoServico;
     }
 
-    public void setTempoServico(ZonedDateTime tempoServico) {
+    public void setTempoServico(int tempoServico) {
         this.tempoServico = tempoServico;
     }
 

@@ -46,4 +46,12 @@ public class Cliente extends Pessoa{
     public void setContas(LinkedList<Conta> contas) {
         this.contas = contas;
     }
+
+    public void criarContaPoupanca(double saldo, double taxaJuros) {
+        contas.add(new ContaPoupanca(saldo, taxaJuros));
+    }
+
+    public void criarContaCorrente(double saldo, double tarifaMensal) {
+        contas.add(new ContaCorrente(saldo, tarifaMensal));
+    }
 }
