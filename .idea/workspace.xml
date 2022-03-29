@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="87eda37a-d97e-486c-9253-06d72270e4d5" name="Changes" comment="" />
-=======
-    <list default="true" id="87eda37a-d97e-486c-9253-06d72270e4d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cupom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cupom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Emprestimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Emprestimo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/OpBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/OpBancaria.java" afterDir="false" />
-    </list>
->>>>>>> 329d52286813e89b7cad969a372b932ce4f15506
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
