@@ -24,3 +24,6 @@ hs_err_pid*
 
 # requisitos
 *.docx
+
+# workspace.xml
+.idea/workspace.xml
