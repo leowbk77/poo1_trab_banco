@@ -15,6 +15,7 @@
       <list>
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -42,6 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17.0.1" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.41494253" />
@@ -105,7 +107,7 @@
       <workItem from="1648508606089" duration="444000" />
       <workItem from="1648509063987" duration="329000" />
       <workItem from="1648509405670" duration="79000" />
-      <workItem from="1648516162140" duration="321000" />
+      <workItem from="1648516162140" duration="2851000" />
     </task>
     <servers />
   </component>
