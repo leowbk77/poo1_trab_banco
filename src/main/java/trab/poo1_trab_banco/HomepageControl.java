@@ -38,6 +38,9 @@ public class HomepageControl {
     private Scene scene;
     private Parent parent;
 
+    // DEMAIS VARS
+    private String camposDetxt;
+
     @FXML
     public void ir_para_home(ActionEvent event) throws IOException {
         parent = FXMLLoader.load(getClass().getResource("homepage.fxml"));
@@ -63,8 +66,20 @@ public class HomepageControl {
 
     @FXML
     protected void metodoqualquer(){
+        camposDetxt = campodetxt.getText();
+
+        try{
+            int campo2 = Integer.parseInt(campodetxt1.getText());
+            campo2++;
+            System.out.println("Valor inserido + 1: " + campo2);
+        }catch (NumberFormatException e){
+            System.out.println("Invalid Input");
+        }
+
         campodetxt.clear();
         campodetxt1.clear();
-        alteraFonte();
+        
+        labelteste.setFont(Font.font("comic sans ms", 20));
+        labelteste.setText(camposDetxt);
     }
 }
