@@ -22,6 +22,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -136,7 +144,19 @@
       <workItem from="1648581934943" duration="541000" />
       <workItem from="1648582487552" duration="193000" />
       <workItem from="1648582693119" duration="242000" />
-      <workItem from="1648582947420" duration="326000" />
+      <workItem from="1648582947420" duration="3158000" />
+      <workItem from="1648586478957" duration="265000" />
+      <workItem from="1648586759283" duration="238000" />
+      <workItem from="1648587012444" duration="22000" />
+      <workItem from="1648587046904" duration="305000" />
+      <workItem from="1648587367284" duration="138000" />
+      <workItem from="1648587519875" duration="268000" />
+      <workItem from="1648587803106" duration="294000" />
+      <workItem from="1648588112244" duration="1024000" />
+      <workItem from="1648589157084" duration="541000" />
+      <workItem from="1648589712423" duration="219000" />
+      <workItem from="1648589944916" duration="186000" />
+      <workItem from="1648590145040" duration="72000" />
     </task>
     <servers />
   </component>

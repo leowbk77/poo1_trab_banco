@@ -4,12 +4,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trab.poo1_trab_banco.TesteControl">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trab.poo1_trab_banco.HomepageControl">
    <children>
       <HBox prefHeight="97.0" prefWidth="600.0">
          <children>
             <Label fx:id="labelteste" prefHeight="96.0" prefWidth="525.0" text="como altera afonte?" />
-            <Button mnemonicParsing="false" onAction="#botaoClick" prefHeight="59.0" prefWidth="146.0" text="Socorro">
+            <Button fx:id="botao1" mnemonicParsing="false" onAction="#ir_para_home" prefHeight="59.0" prefWidth="146.0" text="Socorro">
                <HBox.margin>
                   <Insets right="15.0" top="15.0" />
                </HBox.margin>

@@ -10,16 +10,28 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 
 public class Main extends Application {
-
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("homepage.fxml"));
+
         Scene cena = new Scene(fxmlLoader.load(), 800, 600);
+
         stage.setTitle("UmTitulo");
         stage.setScene(cena);
 
+
+        /* TESTE
+        double minshow = stage.getMinHeight();
+        System.out.println("minheight: " + minshow);
+
+        stage.setMinHeight(600.0); // seta a janela em 800x600 no minimo (nao permite resize)
+        stage.setMinWidth(800.0);
+        */
+
+
         stage.show();
     }
+
 
     public static void main(String[] args) {
         ArrayList<Agencia> agencias = new ArrayList<>();

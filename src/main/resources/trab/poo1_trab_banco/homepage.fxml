@@ -16,7 +16,7 @@
                         <Font size="23.0" />
                      </font>
                   </Label>
-                  <Button fx:id="botao1" mnemonicParsing="false" text="Clientes" textOverrun="CLIP">
+                  <Button fx:id="botao1" mnemonicParsing="false" onAction="#ir_para_telaTeste" text="Clientes" textOverrun="CLIP">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
