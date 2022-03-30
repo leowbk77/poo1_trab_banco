@@ -26,7 +26,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="botao3" mnemonicParsing="false" text="Button">
+                  <Button fx:id="botao3" mnemonicParsing="false" onAction="#ir_para_control" text="ComsControl">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>

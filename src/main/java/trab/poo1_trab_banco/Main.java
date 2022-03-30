@@ -19,7 +19,6 @@ public class Main extends Application {
         stage.setTitle("UmTitulo");
         stage.setScene(cena);
 
-
         /* TESTE
         double minshow = stage.getMinHeight();
         System.out.println("minheight: " + minshow);
@@ -28,8 +27,8 @@ public class Main extends Application {
         stage.setMinWidth(800.0);
         */
 
-
         stage.show();
+
     }
 
 

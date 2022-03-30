@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<VBox fx:controller="trab.poo1_trab_banco.Comunicacaocontrol" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Label alignment="CENTER" prefHeight="65.0" prefWidth="700.0" text="Label" fx:id="labelTeste">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="268.0" layoutY="14.0" mnemonicParsing="false" text="Retorno?" fx:id="botaoDeRetorno" onAction="#novaJanela"/>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -33,35 +33,69 @@ public class HomepageControl {
     @FXML
     private TextField campodetxt1;
 
-    // REFERENCIAS DA MUDANCA DE TELA
-    private Stage stage;
-    private Scene scene;
-    private Parent parent;
-
     // DEMAIS VARS
     private String camposDetxt;
-
-    @FXML
-    public void ir_para_home(ActionEvent event) throws IOException {
-        parent = FXMLLoader.load(getClass().getResource("homepage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.show();
-    }
     
     @FXML
     public void ir_para_telaTeste(ActionEvent event) throws IOException{
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Tela-teste.fxml"));
+
+            Scene cena = new Scene(fxmlLoader.load(), 800, 600);
+
+            Stage stage1 = new Stage();
+            stage1.setTitle("New Window");
+            stage1.setScene(cena);
+            stage1.show();
+
+        } catch (IOException e) {
+            System.out.println("EXCEPTION" + e.getMessage());
+        }
+        
+        /* PULA A JANELA
         parent = FXMLLoader.load(getClass().getResource("Tela-teste.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(parent, 800,600);
         stage.setScene(scene);
         stage.show();
+        */
     }
 
     @FXML
-    protected void alteraFonte(){
-        labelteste.setFont(Font.font("comic sans ms", 20));
+    public void ir_para_control(ActionEvent event) throws IOException{
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("testecomunicacao.fxml"));
+
+            Scene cena = new Scene(loader.load(), 800, 600);
+
+            Comunicacaocontrol control = loader.getController(); // COMUNICA ENTRE OS CONTROLERS (APOS O LOAD NA CENA NA LINHA DE CIMA)
+            System.out.println(control.textoAntigo());
+            control.textoChange("Hello");
+
+            Stage stage1 = new Stage();
+
+            stage1.setTitle("New Window");
+            stage1.setScene(cena);
+                stage1.show();
+            } catch (IOException e) {
+            System.out.println("EXCEPTION" + e.getMessage());
+        }
+
+        /* PULA A JANELA
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("testecomunicacao.fxml"));
+        parent = loader.load();
+
+        Comunicacaocontrol controladorteste = loader.getController();
+        System.out.println(controladorteste.textoAntigo());
+
+        controladorteste.textoChange("NovoTexto");
+
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(parent, 800, 600);
+        stage.setScene(scene);
+        stage.show();
+         */
     }
 
     @FXML
@@ -82,4 +116,5 @@ public class HomepageControl {
         labelteste.setFont(Font.font("comic sans ms", 20));
         labelteste.setText(camposDetxt);
     }
+
 }
