@@ -7,7 +7,7 @@
     -fx-background-insets: 0,1,2,3;
     -fx-background-radius: 3,2,2,2;
     -fx-text-fill: white;
-    -fx-cursor: pointer;
+    -fx-cursor: hand;
 }
 #botao1:hover {
     -fx-background-color: #1c1c1c, #2f4b8f,
@@ -23,7 +23,7 @@
     -fx-background-insets: 0,1,2,3;
     -fx-background-radius: 3,2,2,2;
     -fx-text-fill: white;
-    -fx-cursor: pointer;
+    -fx-cursor: hand;
 }
 #botao2:hover {
     -fx-background-color: #1c1c1c, #2f4b8f,
@@ -39,7 +39,7 @@
     -fx-background-insets: 0,1,2,3;
     -fx-background-radius: 3,2,2,2;
     -fx-text-fill: white;
-    -fx-cursor: pointer;
+    -fx-cursor: hand;
 }
 #botao3:hover {
     -fx-background-color: #1c1c1c, #2f4b8f,
@@ -55,9 +55,25 @@
     -fx-background-insets: 0,1,2,3;
     -fx-background-radius: 3,2,2,2;
     -fx-text-fill: white;
-    -fx-cursor: pointer;
+    -fx-cursor: hand;
 }
 #botao4:hover {
+    -fx-background-color: #1c1c1c, #2f4b8f,
+    linear-gradient(#666666, #555555),
+    linear-gradient(#666666, #555555);
+}
+#botao5 {
+     -fx-pref-width: 100;
+     -fx-pref-height: 30;
+     -fx-background-color: #555555, #2f4b8f,
+     linear-gradient(#666666, #555555),
+     linear-gradient(#666666, #555555);;
+     -fx-background-insets: 0,1,2,3;
+     -fx-background-radius: 3,2,2,2;
+     -fx-text-fill: white;
+     -fx-cursor: hand;
+ }
+#botao5:hover {
     -fx-background-color: #1c1c1c, #2f4b8f,
     linear-gradient(#666666, #555555),
     linear-gradient(#666666, #555555);
@@ -73,4 +89,24 @@
 #titulo {
     -fx-alignment: center;
     -fx-text-alignment: center;
+}
+#labelinfo {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+#labelinfo2 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+#labelinfo3 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+#labelinfo4 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+#labelinfo5 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
 }

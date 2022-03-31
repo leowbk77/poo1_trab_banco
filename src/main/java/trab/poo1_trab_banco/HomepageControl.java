@@ -35,11 +35,20 @@ public class HomepageControl {
 
     // DEMAIS VARS
     private String camposDetxt;
+
+    /*
+    AQUI FALTA CRIAR UM MERODO UNICO PARA ABRIR AS OUTRAS JANELAS
+    PASSANDO SOMENTE O NOME DO .FXML
+    ISSO DIMINUI O NUMERO DE METODOS PARA SEREM CHAMADOS
+    COMO CARALHOS FAAZER ISSO COM DIFERENTES BOTOES?
+    CONTINUA TENDO UMA CARALHADA DE METODO, POREM TODOS CHAMAM O MESMO PASSANDO APENAS O NOME DE PARAMETRO
+    (???????????)
+     */
     
     @FXML
     public void ir_para_telaTeste(ActionEvent event) throws IOException{
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Tela-teste.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("clientes.fxml"));
 
             Scene cena = new Scene(fxmlLoader.load(), 800, 600);
 

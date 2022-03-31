@@ -19,10 +19,6 @@ public class Comunicacaocontrol {
     @FXML
     Button botaoDeRetorno;
 
-    public Comunicacaocontrol(){
-        labelTeste = new Label("hello");
-        botaoDeRetorno = new Button("retorno?");
-    }
 
     @FXML
     public void novaJanela(ActionEvent event) throws  IOException{
