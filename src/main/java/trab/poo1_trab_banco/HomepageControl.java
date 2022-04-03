@@ -53,7 +53,7 @@ public class HomepageControl {
             Scene cena = new Scene(fxmlLoader.load(), 800, 600);
 
             Stage stage1 = new Stage();
-            stage1.setTitle("New Window");
+            stage1.setTitle("Clientes");
             stage1.setScene(cena);
             stage1.show();
 

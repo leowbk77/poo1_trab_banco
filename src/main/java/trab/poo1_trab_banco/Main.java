@@ -15,8 +15,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("homepage.fxml"));
 
         Scene cena = new Scene(fxmlLoader.load(), 800, 600);
-
-        stage.setTitle("UmTitulo");
+        stage.setTitle("22Bank");
         stage.setScene(cena);
 
         /* TESTE
