@@ -72,4 +72,9 @@ public abstract class Conta {
             cupons.add(new Cupom());
         }
     }
+
+    public void imprimeConta() {
+        System.out.printf("\nNum identificação conta: %s\n", this.numIdentificacao);
+        System.out.printf("Saldo: %.2f\n", this.getSaldo());
+    }
 }

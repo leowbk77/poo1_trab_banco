@@ -71,4 +71,10 @@ public class Funcionario extends Pessoa{
     public void setAgencia(Agencia agencia) {
         this.agencia = agencia;
     }
+
+    public void imprimeFuncionario() {
+        System.out.printf("\nNome do cliente: %s\n", this.getNome());
+        System.out.printf("CPF do cliente: %s\n", this.getCpf());
+        System.out.printf("Telefone: %s\n", this.getFone());
+    }
 }

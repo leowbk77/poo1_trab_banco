@@ -7,10 +7,13 @@
     <list default="true" id="87eda37a-d97e-486c-9253-06d72270e4d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/ClienteAddControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/ClienteAddControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/FuncionariosAddControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/FuncionariosAddControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Agencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Agencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Cupom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Cupom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/clientesAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/clientesAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/funcionariosAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/funcionariosAdd.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +232,7 @@
       <workItem from="1649103478261" duration="4346000" />
       <workItem from="1649107839355" duration="178000" />
       <workItem from="1649108029526" duration="223000" />
-      <workItem from="1649108845652" duration="780000" />
+      <workItem from="1649108845652" duration="2046000" />
     </task>
     <servers />
   </component>

@@ -50,7 +50,7 @@
                      </children></HBox>
                     </children></VBox>
                 <Button fx:id="botaoAdd2" layoutX="500.0" layoutY="556.0" mnemonicParsing="false" onAction="#adicionaFuncionario" text="Adiciona" />
-                <Button layoutX="200.0" layoutY="559.0" mnemonicParsing="false" text="printa" />
+                <Button layoutX="200.0" layoutY="559.0" mnemonicParsing="false" onAction="#printaFuncionario" text="printa" />
             </children></AnchorPane>
     </children>
 </HBox>

@@ -48,4 +48,10 @@ public class Cliente extends Pessoa{
     public void criarContaCorrente(double saldo, double tarifaMensal) {
         contas.add(new ContaCorrente(saldo, tarifaMensal));
     }
+
+    public void imprimeCliente() {
+        System.out.printf("\nNome do cliente: %s\n", this.getNome());
+        System.out.printf("CPF do cliente: %s\n", this.getCpf());
+        System.out.printf("Cidade: %s - Estado: %s\n", this.getEnderecoCliente().getCidade(), this.getEnderecoCliente().getEstado());
+    };
 }

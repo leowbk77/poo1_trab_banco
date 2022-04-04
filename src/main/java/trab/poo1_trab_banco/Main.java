@@ -58,6 +58,13 @@ public class Main extends Application {
         Gerente gerente1 = new Gerente("Camila", "522.912.544-12", "(34) 99778-1251", ZonedDateTime.now(), 10, agencia1);
         gerentes.add(gerente1);
 
+        for(Cliente cliente : clientes) {
+            cliente.imprimeCliente();
+        };
+
+        cliente1.criarContaCorrente(1500, 15);
+        cliente1.getContas().getFirst().imprimeConta();
+
         // comentar a linha do launch para impedir de rodar a UI
         launch();
     }
