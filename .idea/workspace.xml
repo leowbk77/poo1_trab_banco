@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87eda37a-d97e-486c-9253-06d72270e4d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Agencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Agencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/ClienteAddControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/services/ClienteAddControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/ClientesControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/services/ClientesControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Comunicacaocontrol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/services/Comunicacaocontrol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/ContaCorrente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/ContaPoupanca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Cupom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Cupom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Emprestimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Emprestimo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/HomepageControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/services/HomepageControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/OpBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/OpBancaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trab/poo1_trab_banco/models/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/Tela-teste.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/Tela-teste.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/clientes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/clientes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/clientesAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/clientesAdd.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/homepage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/homepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/testecomunicacao.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trab/poo1_trab_banco/testecomunicacao.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="87eda37a-d97e-486c-9253-06d72270e4d5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +55,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.41494253" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="trab.poo1_trab_banco" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -230,6 +210,14 @@
       <workItem from="1648836226206" duration="1789000" />
       <workItem from="1648838041507" duration="812000" />
       <workItem from="1649074951431" duration="2589000" />
+      <workItem from="1649093955763" duration="362000" />
+      <workItem from="1649094333835" duration="456000" />
+      <workItem from="1649094805908" duration="166000" />
+      <workItem from="1649094985663" duration="510000" />
+      <workItem from="1649095511327" duration="226000" />
+      <workItem from="1649095751463" duration="211000" />
+      <workItem from="1649095977263" duration="267000" />
+      <workItem from="1649096259054" duration="49000" />
     </task>
     <servers />
   </component>
