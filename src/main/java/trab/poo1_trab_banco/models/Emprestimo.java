@@ -1,17 +1,15 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.models;
 
-import java.util.Random;
+import java.util.UUID;
 
 public class Emprestimo {
-    private int numEmprestimo;
+    private UUID numEmprestimo;
     private double valor;
     private int numParcelas;
     private Agencia agenciaOrigem;
 
-    private Random aux = new Random();
-
     public Emprestimo(double valor, int numParcelas, Agencia agenciaOrigem){
-        this.numEmprestimo = aux.nextInt(10000);
+        this.numEmprestimo = UUID.randomUUID();
         this.agenciaOrigem = agenciaOrigem;
         this.numParcelas = numParcelas;
         this.valor = valor;
@@ -33,7 +31,7 @@ public class Emprestimo {
         this.numParcelas = numParcelas;
     }
 
-    public int getNumEmprestimo() {
+    public UUID getNumEmprestimo() {
         return numEmprestimo;
     }
 

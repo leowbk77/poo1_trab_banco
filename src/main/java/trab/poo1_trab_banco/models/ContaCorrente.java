@@ -1,4 +1,4 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.models;
 
 public class ContaCorrente extends Conta{
     private double tarifaMensal;

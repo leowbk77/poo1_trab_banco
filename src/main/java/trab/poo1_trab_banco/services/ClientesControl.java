@@ -1,4 +1,4 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.services;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,8 +8,6 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.time.ZonedDateTime;
-import java.util.LinkedList;
 
 public class ClientesControl {
     // temporario

@@ -1,28 +1,27 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.models;
 
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
-import java.util.Random;
+import java.util.UUID;
 
 public class Funcionario extends Pessoa{
-    protected int numFuncional;
+    protected UUID numFuncional;
     protected String fone;
-
     protected LinkedList<String> dependentes;
     protected Funcionario supervisor;
     protected int tempoServico;
     protected ZonedDateTime admissao;
+    protected Agencia agencia;
 
-    private Random aux = new Random();
-
-    public Funcionario(String nome, String cpf, String fone, ZonedDateTime admissao, int tempoServico){
+    public Funcionario(String nome, String cpf, String fone, ZonedDateTime admissao, int tempoServico, Agencia agencia){
         super(nome, cpf);
-        this.numFuncional = aux.nextInt(10000);
+        this.numFuncional = UUID.randomUUID();
         this.fone = fone;
         this.tempoServico = tempoServico;
         this.admissao = admissao;
         this.supervisor = null;
         this.dependentes = new LinkedList<String>();
+        this.agencia = agencia;
     }
 
     public void setSupervisor(Funcionario supervisor){
@@ -70,5 +69,13 @@ public class Funcionario extends Pessoa{
 
     public void setAdmissao(ZonedDateTime admissao) {
         this.admissao = admissao;
+    }
+
+    public Agencia getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(Agencia agencia) {
+        this.agencia = agencia;
     }
 }

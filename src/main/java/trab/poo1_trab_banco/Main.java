@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import trab.poo1_trab_banco.models.*;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;
@@ -29,7 +30,6 @@ public class Main extends Application {
         stage.show();
 
     }
-
 
     public static void main(String[] args) {
         ArrayList<Agencia> agencias = new ArrayList<>();
@@ -58,8 +58,8 @@ public class Main extends Application {
         clientes.add(cliente3);
 
         // Criando funcionários localmente
-        Funcionario funcionario1 = new Funcionario("João Pedro", "987.541.321-12", "(11) 99151-4231", ZonedDateTime.now(), 1);
-        Funcionario funcionario2 = new Funcionario("Gisele", "514.997.123-44", "(34) 99812-5411", ZonedDateTime.now(), 3);
+        Funcionario funcionario1 = new Funcionario("João Pedro", "987.541.321-12", "(11) 99151-4231", ZonedDateTime.now(), 1, agencia1);
+        Funcionario funcionario2 = new Funcionario("Gisele", "514.997.123-44", "(34) 99812-5411", ZonedDateTime.now(), 3, agencia2);
         funcionarios.add(funcionario1);
         funcionarios.add(funcionario2);
 

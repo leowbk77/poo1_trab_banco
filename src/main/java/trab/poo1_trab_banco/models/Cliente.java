@@ -1,12 +1,11 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.models;
 
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
-import java.util.Random;
+import java.util.UUID;
 
 public class Cliente extends Pessoa{
-    private int id;
-
+    private UUID id;
     private Endereco enderecoCliente;
     private Gerente gerente;
     private LinkedList<Conta> contas;
@@ -16,8 +15,7 @@ public class Cliente extends Pessoa{
         super.nascimento = nascimento;
         enderecoCliente = new Endereco(cidade, estado, endereco);
 
-        Random aux = new Random();
-        this.id = aux.nextInt(10000);
+        this.id = UUID.randomUUID();
 
         gerente = null;
         contas = new LinkedList<Conta>();

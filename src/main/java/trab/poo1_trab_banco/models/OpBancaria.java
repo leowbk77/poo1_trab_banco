@@ -1,16 +1,17 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.models;
 
 import java.time.ZonedDateTime;
+import java.util.UUID;
 
 public class OpBancaria {
     private String tipo;
     private String descricao;
     private double valor;
-    private int idContaCorrente;
+    private UUID idContaCorrente;
 
     private ZonedDateTime data;
 
-    public OpBancaria(String tipo, String descricao, double valor, int idContaCorrente) {
+    public OpBancaria(String tipo, String descricao, double valor, UUID idContaCorrente) {
         this.tipo = tipo;
         this.descricao = descricao;
         this.valor = valor;
@@ -42,7 +43,7 @@ public class OpBancaria {
         this.valor = valor;
     }
 
-    public int getIdContaCorrente() {
+    public UUID getIdContaCorrente() {
         return idContaCorrente;
     }
 

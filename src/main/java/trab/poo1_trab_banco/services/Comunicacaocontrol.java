@@ -1,4 +1,4 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.services;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

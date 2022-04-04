@@ -1,23 +1,21 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.models;
 
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
-import java.util.Random;
+import java.util.UUID;
 
 public abstract class Conta {
-    protected int numIdentificacao;
+    protected UUID numIdentificacao;
     protected ZonedDateTime dtCriacao;
     protected double saldo;
     protected ZonedDateTime ultimoAcesso;
     protected LinkedList<Cupom> cupons;
     protected LinkedList<OpBancaria> operacoes;
 
-    private Random aux = new Random();
-
     public Conta(double saldo) {
         this.dtCriacao = ZonedDateTime.now();
         this.saldo = saldo;
-        this.numIdentificacao = aux.nextInt(10000);
+        this.numIdentificacao = UUID.randomUUID();
         this.ultimoAcesso = ZonedDateTime.now();
         this.cupons = new LinkedList<>();
         this.operacoes = new LinkedList<>();

@@ -1,20 +1,18 @@
-package trab.poo1_trab_banco;
+package trab.poo1_trab_banco.models;
 
 import java.time.ZonedDateTime;
-import java.util.Random;
+import java.util.UUID;
 
 public class Cupom {
-    public int numCupom;
+    public UUID numCupom;
     public ZonedDateTime validade;
 
-    private Random aux = new Random();
-
     public Cupom(){
-        this.numCupom = aux.nextInt(10000);
+        this.numCupom = UUID.randomUUID();
         this.validade = ZonedDateTime.now();
     }
 
-    public int getNumCupom() {
+    public UUID getNumCupom() {
         return numCupom;
     }
 

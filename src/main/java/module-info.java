@@ -8,4 +8,8 @@ module trab.poo1_trab_banco {
 
     opens trab.poo1_trab_banco to javafx.fxml;
     exports trab.poo1_trab_banco;
+    exports trab.poo1_trab_banco.models;
+    opens trab.poo1_trab_banco.models to javafx.fxml;
+    exports trab.poo1_trab_banco.services;
+    opens trab.poo1_trab_banco.services to javafx.fxml;
 }
