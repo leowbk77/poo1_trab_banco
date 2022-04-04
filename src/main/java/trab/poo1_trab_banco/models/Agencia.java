@@ -1,8 +1,8 @@
 package trab.poo1_trab_banco.models;
 
 public class Agencia {
-    public String nome;
-    public Endereco endereco;
+    private String nome;
+    private Endereco endereco;
 
     public Agencia(String nome, Endereco endereco){
         this.nome = nome;

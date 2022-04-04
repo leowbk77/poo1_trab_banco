@@ -4,8 +4,8 @@ import java.time.ZonedDateTime;
 import java.util.UUID;
 
 public class Cupom {
-    public UUID numCupom;
-    public ZonedDateTime validade;
+    private UUID numCupom;
+    private ZonedDateTime validade;
 
     public Cupom(){
         this.numCupom = UUID.randomUUID();

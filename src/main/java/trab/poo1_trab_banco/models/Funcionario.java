@@ -28,13 +28,6 @@ public class Funcionario extends Pessoa{
         this.supervisor = supervisor;
     }
 
-//    public int getTempoServico(){
-//        /* TEMPORARIO //
-//        // (alterar)  */
-//        Calendar temp = Calendar.getInstance(); // pega o tempo atual
-//        return temp.get(Calendar.YEAR) - admissao.get(Calendar.YEAR); // faz a diferenca dos anos e retorna
-//    }
-
     public String getFone() {
         return fone;
     }

@@ -67,7 +67,7 @@ public class ClienteAddControl {
 
     @FXML
     public void printaOsClientes(ActionEvent event) throws IOException {
-        System.out.println(listaTempDeClientes.toString());
+        System.out.println(listaTempDeClientes.getLast().getNome());
     }
 
 }

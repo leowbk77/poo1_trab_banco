@@ -19,16 +19,7 @@ public class Main extends Application {
         stage.setTitle("22Bank");
         stage.setScene(cena);
 
-        /* TESTE
-        double minshow = stage.getMinHeight();
-        System.out.println("minheight: " + minshow);
-
-        stage.setMinHeight(600.0); // seta a janela em 800x600 no minimo (nao permite resize)
-        stage.setMinWidth(800.0);
-        */
-
         stage.show();
-
     }
 
     public static void main(String[] args) {

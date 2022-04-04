@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trab.poo1_trab_banco.ClientesControl">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ListView fx:id="listaDeClientesView" layoutX="14.0" layoutY="14.0" prefHeight="535.0" prefWidth="381.0" />
+            <Button fx:id="botao1" layoutX="14.0" layoutY="556.0" mnemonicParsing="false" text="Adicionar" onAction="#telaDeAdicao">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <VBox fx:id="box" layoutX="400.0" layoutY="14.0" prefHeight="535.0" prefWidth="381.0">
+               <children>
+                  <Label fx:id="labelinfo" alignment="CENTER" prefHeight="40.0" prefWidth="381.0" text="Informações">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelinfo2" prefHeight="40.0" prefWidth="381.0" text="Nome">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="labelinfo3" prefHeight="40.0" prefWidth="381.0" text="CPF">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="labelinfo4" prefHeight="40.0" prefWidth="381.0" text="Nascimento">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="labelinfo5" prefHeight="40.0" prefWidth="381.0" text="Endereço">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children></VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
