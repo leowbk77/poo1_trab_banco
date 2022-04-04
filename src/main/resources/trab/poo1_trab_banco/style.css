@@ -126,6 +126,22 @@
     -fx-text-alignment: center;
     -fx-text-fill: white;
 }
+#labelinfo6 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+#labelinfo7 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+#labelinfo8 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+#labelinfo9 {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
 #labelinfoAdd {
     -fx-text-alignment: center;
     -fx-text-fill: white;
@@ -142,3 +158,9 @@
     -fx-text-alignment: center;
     -fx-text-fill: white;
 }
+#RadioCorrente {
+    -fx-text-fill: white;
+}
+#RadioPoupanca {
+     -fx-text-fill: white;
+ }

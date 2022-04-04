@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trab.poo1_trab_banco.ContasAddControl">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <VBox fx:id="box" layoutX="200.0" layoutY="50.0" prefHeight="500.0" prefWidth="400.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="labelinfoAdd" text="Tipo" />
+                        <RadioButton fx:id="RadioPoupanca" mnemonicParsing="false" text="Poupança">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="RadioCorrente" mnemonicParsing="false" text="Corrente">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                            </children></HBox>
+                    </children></VBox>
+                <Button fx:id="botaoAdd2" layoutX="500.0" layoutY="556.0" mnemonicParsing="false" onAction="#adicionaConta" text="Adiciona" />
+                <Label layoutX="89.0" layoutY="14.0" text="Ta tudo torto bixokkkkkkkkkkkkkk" />
+                <Button layoutX="200.0" layoutY="559.0" mnemonicParsing="false" text="printa" />
+            </children></AnchorPane>
+    </children>
+</HBox>

@@ -33,7 +33,7 @@ public class ClienteAddControl {
     TextField campoDeEndereco;
 
     @FXML
-    ClientesControl origem;
+    private ClientesControl origem;
 
     @FXML
     public void minhaOrigem(ClientesControl origem){
@@ -45,21 +45,21 @@ public class ClienteAddControl {
         if(listaTempDeClientes == null){
             listaTempDeClientes = new LinkedList<Cliente>();
             listaTempDeClientes.add(new Cliente(campoDeNome.getText(),
-                    campoDeCPF.getText(),
-                    ZonedDateTime.now(),
-                    campoDeCidade.getText(),
-                    campoDeEstado.getText(),
-                    campoDeEndereco.getText()));
+                                                campoDeCPF.getText(),
+                                                ZonedDateTime.now(),
+                                                campoDeCidade.getText(),
+                                                campoDeEstado.getText(),
+                                                campoDeEndereco.getText()));
 
             origem.addClienteNoListView(listaTempDeClientes.getLast().getNome());
 
         }else{
             listaTempDeClientes.add(new Cliente(campoDeNome.getText(),
-                    campoDeCPF.getText(),
-                    ZonedDateTime.now(),
-                    campoDeCidade.getText(),
-                    campoDeEstado.getText(),
-                    campoDeEndereco.getText()));
+                                                campoDeCPF.getText(),
+                                                ZonedDateTime.now(),
+                                                campoDeCidade.getText(),
+                                                campoDeEstado.getText(),
+                                                campoDeEndereco.getText()));
 
             origem.addClienteNoListView(listaTempDeClientes.getLast().getNome());
         }
@@ -69,4 +69,5 @@ public class ClienteAddControl {
     public void printaOsClientes(ActionEvent event) throws IOException {
         System.out.println(listaTempDeClientes.toString());
     }
+
 }

@@ -21,6 +21,10 @@ public abstract class Conta {
         this.operacoes = new LinkedList<>();
     }
 
+    public String getID(){
+        return numIdentificacao.toString();
+    }
+
     public ZonedDateTime getDtCriacao() {
         return dtCriacao;
     }

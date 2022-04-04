@@ -16,27 +16,17 @@
                         <Font size="23.0" />
                      </font>
                   </Label>
-                  <Button fx:id="botao1" mnemonicParsing="false" onAction="#ir_para_telaTeste" text="Clientes" textOverrun="CLIP">
+                  <Button fx:id="botao1" mnemonicParsing="false" onAction="#ir_para_clientes" text="Clientes" textOverrun="CLIP">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="botao2" mnemonicParsing="false" text="Funcionários">
+                  <Button fx:id="botao2" mnemonicParsing="false" onAction="#ir_para_funcionarios" text="Funcionários">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="botao3" mnemonicParsing="false" onAction="#ir_para_control" text="ComsControl">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button fx:id="botao4" mnemonicParsing="false" text="Button">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button fx:id="botao5" mnemonicParsing="false" text="Button">
+                  <Button fx:id="botao3" mnemonicParsing="false" onAction="#ir_para_contas" text="Contas">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
