@@ -103,6 +103,12 @@ public class ClientesControl {
     }
 
     @FXML
+    public void reloadBtn(ActionEvent event) throws IOException{
+        listaDeClientesView.getItems().clear();
+        populate();
+    }
+
+    @FXML
     public void loadBtnAct(ActionEvent event) throws IOException {
         String itemSelecionado = listaDeClientesView.getSelectionModel().getSelectedItem();
         loadInfos(itemSelecionado);
@@ -129,6 +135,5 @@ public class ClientesControl {
     @FXML
     public void fileLoad(ActionEvent event) throws IOException {
         banco.readClientesFromFile();
-        //populate();
     }
 }

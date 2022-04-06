@@ -38,7 +38,6 @@ public class HomepageControl {
 
             ClientesControl controladorDaClientes = fxmlLoader.getController();
             controladorDaClientes.setBanco(banco);
-            //controladorDaClientes.populate();
 
             Stage stage1 = new Stage();
             stage1.setTitle("Clientes");
@@ -59,7 +58,6 @@ public class HomepageControl {
 
             FuncionariosControl controladorDeFuncionarios = fxmlLoader.getController();
             controladorDeFuncionarios.setBanco(banco);
-            //controladorDeFuncionarios.populate();
 
             Stage stage1 = new Stage();
             stage1.setTitle("Funcionarios");

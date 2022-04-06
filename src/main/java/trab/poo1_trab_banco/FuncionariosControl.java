@@ -107,12 +107,17 @@ public class FuncionariosControl {
         // se a lista de clientes estiver vazia nao ha o que popular no listview
         if(banco.numeroDeFuncionarios() != 0){
             LinkedList<Funcionario> funcionariosDoBanco = banco.getFuncionarios();
-
             for(Funcionario e : funcionariosDoBanco){
                 listaDeFuncionariosView.getItems().add(e.getNome());
                 addFuncionarioNoHash(e);
             }
         }
+    }
+
+    @FXML
+    public void reloadBtn(ActionEvent event) throws IOException{
+        listaDeFuncionariosView.getItems().clear();
+        populate();
     }
 
     @FXML
@@ -153,7 +158,6 @@ public class FuncionariosControl {
     @FXML
     public void fileLoad(ActionEvent event) throws IOException {
         banco.readFuncionariosFromFile();
-        //populate();
     }
 
 }
