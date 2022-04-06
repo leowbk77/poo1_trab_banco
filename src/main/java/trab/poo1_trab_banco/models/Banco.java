@@ -1,12 +1,15 @@
 package trab.poo1_trab_banco.models;
 
-import java.util.List;
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Banco {
-    List<Agencia> agencias = new ArrayList<>();
+    LinkedList<Agencia> agencias;
+    LinkedList<Pessoa> pessoas;
+
 
     public Banco() {
+        agencias = new LinkedList<>();
+        pessoas = new LinkedList<>();
     }
 
     public void adicionarAgencia(Agencia agencia){
