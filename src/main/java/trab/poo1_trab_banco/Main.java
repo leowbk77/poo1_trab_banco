@@ -9,7 +9,6 @@ import trab.poo1_trab_banco.models.*;
 import java.io.IOException;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main extends Application {
     @Override
@@ -33,10 +32,10 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        List<Agencia> agencias = new ArrayList<>();
-        List<Cliente> clientes = new ArrayList<>();
-        List<Funcionario> funcionarios = new ArrayList<>();
-        List<Gerente> gerentes = new ArrayList<>();
+        ArrayList<Agencia> agencias = new ArrayList<>();
+        ArrayList<Cliente> clientes = new ArrayList<>();
+        ArrayList<Funcionario> funcionarios = new ArrayList<>();
+        ArrayList<Gerente> gerentes = new ArrayList<>();
 
         // Criando agências localmente
         Agencia agencia1 = new Agencia("Agência A", new Endereco("Uberlândia", "MG"));

@@ -1,15 +1,15 @@
 package trab.poo1_trab_banco.models;
 
 import java.util.Date;
-import java.util.ArrayList;
-import java.util.List;
-//import java.util.LinkedList;
+//import java.util.ArrayList;
+//import java.util.List;
+import java.util.LinkedList;
 import java.util.UUID;
 
 public class Funcionario extends Pessoa{
     protected UUID numFuncional;
     protected String fone;
-    protected List<String> dependentes;
+    protected LinkedList<String> dependentes;
     protected Funcionario supervisor;
     protected int tempoServico;
     protected Date admissao;
@@ -22,7 +22,7 @@ public class Funcionario extends Pessoa{
         this.tempoServico = tempoServico;
         this.admissao = admissao;
         this.supervisor = null;
-        this.dependentes = new ArrayList<>();
+        this.dependentes = new LinkedList<>();
         this.agencia = agencia;
     }
 
@@ -45,7 +45,7 @@ public class Funcionario extends Pessoa{
         this.fone = fone;
     }
   
-    public List<String> getDependentes() {
+    public LinkedList<String> getDependentes() {
         return dependentes;
     }
 

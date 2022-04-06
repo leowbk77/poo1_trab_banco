@@ -9,11 +9,13 @@ import trab.poo1_trab_banco.models.Funcionario;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.LinkedList;
 
 public class FuncionariosAddControl {
     // temporario
     private LinkedList<Funcionario> listaTempDeFuncionarios;
+    private Date
 
     //funcionariosAdd.fxml
     @FXML
