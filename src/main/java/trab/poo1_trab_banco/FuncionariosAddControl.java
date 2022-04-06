@@ -62,6 +62,6 @@ public class FuncionariosAddControl {
 
     @FXML
     public void printaFuncionario(ActionEvent event) throws IOException {
-        listaTempDeFuncionarios.getLast().imprimeFuncionario();
+        listaTempDeFuncionarios.getLast().imprimePessoa();
     }
 }

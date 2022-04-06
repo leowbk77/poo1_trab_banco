@@ -15,4 +15,9 @@ public class ContaCorrente extends Conta{
     public void setTarifaMensal(double tarifaMensal) {
         this.tarifaMensal = tarifaMensal;
     }
+
+    public void imprimeConta() {
+        super.imprimeConta();
+        System.out.printf("Tarifa mensal: %.2f%%\n", this.tarifaMensal);
+    }
 }

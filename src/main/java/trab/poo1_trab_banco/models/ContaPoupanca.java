@@ -15,4 +15,9 @@ public class ContaPoupanca extends Conta{
     public void setTaxaJuros(double taxaJuros) {
         this.taxaJuros = taxaJuros;
     }
+
+    public void imprimeConta() {
+        super.imprimeConta();
+        System.out.printf("Taxa juros: %.2f%%\n", this.taxaJuros);
+    }
 }
