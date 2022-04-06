@@ -112,7 +112,7 @@ public class FuncionariosControl {
 
     @FXML
     public void loadBtnAct(ActionEvent event) throws IOException {
-        String itemSelecionado =  listaDeFuncionariosView.getSelectionModel().getSelectedItem();
+        String itemSelecionado = listaDeFuncionariosView.getSelectionModel().getSelectedItem();
         loadInfos(itemSelecionado);
     }
 

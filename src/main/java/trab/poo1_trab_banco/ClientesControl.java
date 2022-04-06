@@ -22,6 +22,7 @@ public class ClientesControl {
 
     // temporario
     // private LinkedList<Cliente> listaTempDeClientes;
+    // mapa de clientes para exibir
     private HashMap<String, Cliente> mapaDeClientes;
 
     // clientes.fxml
@@ -101,7 +102,7 @@ public class ClientesControl {
 
     @FXML
     public void loadBtnAct(ActionEvent event) throws IOException {
-        String itemSelecionado =  listaDeClientesView.getSelectionModel().getSelectedItem();
+        String itemSelecionado = listaDeClientesView.getSelectionModel().getSelectedItem();
         loadInfos(itemSelecionado);
     }
 
