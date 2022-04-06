@@ -24,4 +24,10 @@ public class Agencia {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
+    public void imprimeAgencia() {
+        System.out.printf("Nome da agência: %s\n", this.nome);
+        System.out.printf("Cidade: %s - Estado: %s\n", this.endereco.getCidade(), this.endereco.getEstado());
+        System.out.printf("Endereço: %s\n", this.endereco.getEndereco());
+    }
 }
