@@ -1,6 +1,8 @@
 package trab.poo1_trab_banco.models;
 
-import java.time.ZonedDateTime;
+//import java.time.ZonedDateTime;
+import java.util.List;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.UUID;
 
@@ -8,9 +10,9 @@ public class Cliente extends Pessoa{
     private UUID id;
     private Endereco enderecoCliente;
     private Gerente gerente;
-    private LinkedList<Conta> contas;
+    private List<Conta> contas;
 
-    public Cliente(String nome, String cpf, ZonedDateTime nascimento, String cidade, String estado, String endereco){
+    public Cliente(String nome, String cpf, Date nascimento, String cidade, String estado, String endereco){
         super(nome, cpf);
         super.nascimento = nascimento;
         enderecoCliente = new Endereco(cidade, estado, endereco);
@@ -37,7 +39,7 @@ public class Cliente extends Pessoa{
         this.gerente = gerente;
     }
 
-    public LinkedList<Conta> getContas() {
+    public List<Conta> getContas() {
         return contas;
     }
 
