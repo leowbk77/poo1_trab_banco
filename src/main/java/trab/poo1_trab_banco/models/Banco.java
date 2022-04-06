@@ -19,4 +19,14 @@ public class Banco {
     public void removerAgencia(Agencia agencia){
         agencias.remove(agencia);
     }
+
+    public void adicionarCliente(Pessoa pessoa){
+        if(pessoa instanceof Cliente)
+        pessoas.add(pessoa);
+    }
+
+    public void removerCliente(Pessoa pessoa){
+        if(pessoa instanceof Cliente)
+        pessoas.remove(pessoa);
+    }
 }
