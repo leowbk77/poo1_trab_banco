@@ -76,5 +76,11 @@ public abstract class Conta {
     public void imprimeConta() {
         System.out.printf("\nNum identificação conta: %s\n", this.numIdentificacao);
         System.out.printf("Saldo: %.2f\n", this.saldo);
+        if (!this.cupons.isEmpty()) {
+            for (Cupom cupom : this.cupons) {
+                System.out.printf("Cupom %d:\n", this.cupons.indexOf(cupom) + 1);
+                System.out.printf("Número do cupom: %s\n", cupom.getNumCupom());
+            }
+        }
     }
 }
