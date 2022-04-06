@@ -50,6 +50,7 @@
                         <Insets left="10.0" />
                      </padding></Label>
                     </children></VBox>
+                <Button fx:id="loadBtn" onAction="#loadBtnAct" layoutX="343.0" layoutY="559.0" mnemonicParsing="false" text="Load" />
             </children>
         </AnchorPane>
     </children>

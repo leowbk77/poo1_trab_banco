@@ -42,4 +42,5 @@ public class Banco {
     public int numeroDeClientes(){
         return clientes.size();
     }
+    public int numeroDeFuncionarios() { return funcionarios.size(); }
 }

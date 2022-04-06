@@ -64,6 +64,10 @@ public class HomepageControl {
 
             Scene cena = new Scene(fxmlLoader.load(), 800, 600);
 
+            FuncionariosControl controladorDeFuncionarios = fxmlLoader.getController();
+            controladorDeFuncionarios.setBanco(banco);
+            controladorDeFuncionarios.populate();
+
             Stage stage1 = new Stage();
             stage1.setTitle("Funcionarios");
             stage1.setScene(cena);

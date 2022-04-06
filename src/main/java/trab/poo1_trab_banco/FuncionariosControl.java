@@ -8,11 +8,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
-import trab.poo1_trab_banco.models.Agencia;
-import trab.poo1_trab_banco.models.Banco;
-import trab.poo1_trab_banco.models.Endereco;
+import trab.poo1_trab_banco.models.*;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 public class FuncionariosControl {
@@ -20,12 +19,16 @@ public class FuncionariosControl {
     @FXML
     private Banco banco;
 
+    private HashMap<String, Funcionario> mapaDeFuncionarios;
+
     // temp
     private LinkedList<Agencia> ListaDeAgencias;
 
     // funcionarios.fxml
     @FXML
     Button botao1;
+    @FXML
+    Button loadBtn;
     @FXML
     ListView<String> listaDeFuncionariosView; // isso aqui vai se tornar uma lista de funcionarios (String temporario para facilitar exibicao)
     @FXML
@@ -76,6 +79,50 @@ public class FuncionariosControl {
         }else{
             listaDeFuncionariosView.getItems().add(nome);
         }
+    }
+
+    @FXML
+    public void addFuncionarioNoHash(Funcionario funcionario){
+        if(mapaDeFuncionarios == null){
+            mapaDeFuncionarios = new HashMap<String, Funcionario>();
+            mapaDeFuncionarios.put(funcionario.getNome(), funcionario);
+        }else{
+            mapaDeFuncionarios.put(funcionario.getNome(), funcionario);
+        }
+    }
+
+    @FXML
+    public void addFuncionarioNoBanco(Funcionario funcionario){
+        banco.add_funcionario(funcionario);
+    }
+
+    @FXML
+    public void populate(){
+        // se o listview for nulo a tela é nova
+        // se a lista de clientes estiver vazia nao ha o que popular no listview
+        if(banco.numeroDeFuncionarios() != 0){
+            LinkedList<Funcionario> funcionariosDoBanco = banco.getFuncionarios();
+
+            for(Funcionario e : funcionariosDoBanco){
+                listaDeFuncionariosView.getItems().add(e.getNome());
+                addFuncionarioNoHash(e);
+            }
+        }
+    }
+
+    @FXML
+    public void loadBtnAct(ActionEvent event) throws IOException {
+        String itemSelecionado =  listaDeFuncionariosView.getSelectionModel().getSelectedItem();
+        loadInfos(itemSelecionado);
+    }
+
+    @FXML
+    private void loadInfos(String item){
+        Funcionario tempFuncionario = mapaDeFuncionarios.get(item);
+        labelinfo2.setText(tempFuncionario.getNome());
+        labelinfo3.setText(tempFuncionario.getFone());
+//        labelinfo4.setText(tempFuncionario.getSupervisor().getNome());
+//        labelinfo6.setText(tempFuncionario.getAgencia().getNome());
     }
 
     @FXML
