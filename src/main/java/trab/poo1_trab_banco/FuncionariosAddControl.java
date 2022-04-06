@@ -8,14 +8,13 @@ import javafx.scene.control.TextField;
 import trab.poo1_trab_banco.models.Funcionario;
 
 import java.io.IOException;
-import java.time.ZonedDateTime;
+//import java.time.ZonedDateTime;
 import java.util.Date;
 import java.util.LinkedList;
 
 public class FuncionariosAddControl {
     // temporario
     private LinkedList<Funcionario> listaTempDeFuncionarios;
-    private Date
 
     //funcionariosAdd.fxml
     @FXML
@@ -44,7 +43,7 @@ public class FuncionariosAddControl {
             listaTempDeFuncionarios.add(new Funcionario(campoDeNome.getText(),
                                                         campoDeCPF.getText(),
                                                         campoDeFone.getText(),
-                                                        ZonedDateTime.now(),
+                                                        new Date(),
                                                         0,
                                                         origem.pegarAgenciaFic()));
 
@@ -54,7 +53,7 @@ public class FuncionariosAddControl {
             listaTempDeFuncionarios.add(new Funcionario(campoDeNome.getText(),
                                                         campoDeCPF.getText(),
                                                         campoDeFone.getText(),
-                                                        ZonedDateTime.now(),
+                                                        new Date(),
                                                         0,
                                                         origem.pegarAgenciaFic()));
 

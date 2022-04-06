@@ -10,11 +10,12 @@ import trab.poo1_trab_banco.models.Cliente;
 import java.io.IOException;
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
-import java.util.List;
+//import java.util.List;
+import java.util.Date;
 
 public class ClienteAddControl {
     // temporario
-    private List<Cliente> listaTempDeClientes;
+    private LinkedList<Cliente> listaTempDeClientes;
 
     //clientesAdd.fxml
     @FXML
@@ -47,7 +48,7 @@ public class ClienteAddControl {
             listaTempDeClientes = new LinkedList<>();
             listaTempDeClientes.add(new Cliente(campoDeNome.getText(),
                                                 campoDeCPF.getText(),
-                                                ZonedDateTime.now(),
+                                                new Date(),
                                                 campoDeCidade.getText(),
                                                 campoDeEstado.getText(),
                                                 campoDeEndereco.getText()));
@@ -57,7 +58,7 @@ public class ClienteAddControl {
         }else{
             listaTempDeClientes.add(new Cliente(campoDeNome.getText(),
                                                 campoDeCPF.getText(),
-                                                ZonedDateTime.now(),
+                                                new Date(),
                                                 campoDeCidade.getText(),
                                                 campoDeEstado.getText(),
                                                 campoDeEndereco.getText()));
