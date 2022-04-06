@@ -37,7 +37,7 @@ public abstract class Pessoa {
     }
 
     public void imprimePessoa() {
-        System.out.printf("Nome: %s\n", this.getNome());
-        System.out.printf("CPF: %s\n", this.getCpf());
+        System.out.printf("Nome: %s\n", this.nome);
+        System.out.printf("CPF: %s\n", this.cpf);
     };
 }

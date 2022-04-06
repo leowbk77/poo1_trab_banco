@@ -51,6 +51,7 @@ public class Cliente extends Pessoa{
 
     public void imprimePessoa() {
         super.imprimePessoa();
-        System.out.printf("Cidade: %s - Estado: %s\n", this.getEnderecoCliente().getCidade(), this.getEnderecoCliente().getEstado());
+        System.out.printf("Cidade: %s - Estado: %s\n", this.enderecoCliente.getCidade(), this.enderecoCliente.getEstado());
+        System.out.printf("Endereço: %s\n", this.enderecoCliente.getEndereco());
     };
 }

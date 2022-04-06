@@ -74,6 +74,6 @@ public class Funcionario extends Pessoa{
 
     public void imprimePessoa() {
         super.imprimePessoa();
-        System.out.printf("Telefone: %s\n", this.getFone());
+        System.out.printf("Telefone: %s\n", this.fone);
     };
 }
