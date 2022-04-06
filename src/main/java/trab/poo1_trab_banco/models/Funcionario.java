@@ -1,13 +1,15 @@
 package trab.poo1_trab_banco.models;
 
 import java.time.ZonedDateTime;
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.List;
+//import java.util.LinkedList;
 import java.util.UUID;
 
 public class Funcionario extends Pessoa{
     protected UUID numFuncional;
     protected String fone;
-    protected LinkedList<String> dependentes;
+    protected List<String> dependentes;
     protected Funcionario supervisor;
     protected int tempoServico;
     protected ZonedDateTime admissao;
@@ -20,7 +22,7 @@ public class Funcionario extends Pessoa{
         this.tempoServico = tempoServico;
         this.admissao = admissao;
         this.supervisor = null;
-        this.dependentes = new LinkedList<String>();
+        this.dependentes = new ArrayList<>();
         this.agencia = agencia;
     }
 
@@ -42,14 +44,16 @@ public class Funcionario extends Pessoa{
     public void setFone(String fone) {
         this.fone = fone;
     }
-
-    public LinkedList<String> getDependentes() {
+  
+    public List<String> getDependentes() {
         return dependentes;
     }
 
-    public void setDependentes(LinkedList<String> dependentes) {
+    //Listas não podem ser alteradas
+
+    /*public void setDependentes(LinkedList<String> dependentes) {
         this.dependentes = dependentes;
-    }
+    }*/
 
     public Funcionario getSupervisor() {
         return supervisor;
@@ -77,5 +81,13 @@ public class Funcionario extends Pessoa{
 
     public void setAgencia(Agencia agencia) {
         this.agencia = agencia;
+    }
+
+    public void adicionaDependente(String dependente){
+        dependentes.add(dependente);
+    }
+
+    public void removeDependente(String dependente){
+        dependentes.remove(dependente);
     }
 }
