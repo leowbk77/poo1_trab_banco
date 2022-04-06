@@ -8,12 +8,14 @@ public class Banco implements Serializable {
     private LinkedList<Agencia> agencias;
     private LinkedList<Cliente> clientes;
     private LinkedList<Funcionario> funcionarios;
+    private LinkedList<Conta> contas;
 
     // metodos
     public Banco(){
         agencias = new LinkedList<Agencia>();
         clientes = new LinkedList<Cliente>();
         funcionarios = new LinkedList<Funcionario>();
+        contas = new LinkedList<Conta>();
     }
 
 
@@ -75,26 +77,26 @@ public class Banco implements Serializable {
         }
     }
 
-    // escreve as agencias em arquivo
-    public void writeAgenciasToFile(){
+    // escreve as contas em arquivo
+    public void writeContasToFile(){
         try{
-            FileOutputStream fos = new FileOutputStream("agenciasData.tmp");
+            FileOutputStream fos = new FileOutputStream("contasData.tmp");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(agencias);
+            oos.writeObject(contas);
             oos.close();
             System.out.println("Salvo!");
         }catch(IOException e){
             System.out.println("EXCEPTION - " + e.getMessage());
         }
     }
-    // le agencias em arquivo
-    public void readAgenciasFromFile(){
+    // le contas em arquivo
+    public void readContasFromFile(){
         try{
-            FileInputStream fis = new FileInputStream("agenciasData.tmp");
+            FileInputStream fis = new FileInputStream("contasData.tmp");
             ObjectInputStream ois = new ObjectInputStream(fis);
             try {
-                LinkedList<Agencia> listaDoArquivo = (LinkedList<Agencia>) ois.readObject();
-                agencias.addAll(listaDoArquivo);
+                LinkedList<Conta> listaDoArquivo = (LinkedList<Conta>) ois.readObject();
+                contas.addAll(listaDoArquivo);
                 System.out.println("Carregado!");
             }catch (ClassNotFoundException e){
                 System.out.println("EXCEPTION - " + e.getMessage());
@@ -114,7 +116,7 @@ public class Banco implements Serializable {
     public void add_funcionario(Funcionario novoFuncionario){
         funcionarios.add(novoFuncionario);
     }
-
+    public void add_conta(Conta novaConta) { contas.add(novaConta); }
     // remocao de membros? (futuro - sem tempo)
 
 
@@ -127,10 +129,14 @@ public class Banco implements Serializable {
     public LinkedList<Funcionario> getFuncionarios(){
         return funcionarios;
     }
+    public LinkedList<Conta> getContas(){
+        return contas;
+    }
 
     public int numeroDeClientes(){
         return clientes.size();
     }
     public int numeroDeFuncionarios() { return funcionarios.size(); }
     public int numeroDeAgencias(){return agencias.size();}
+    public int numeroDeContas(){ return contas.size(); }
 }

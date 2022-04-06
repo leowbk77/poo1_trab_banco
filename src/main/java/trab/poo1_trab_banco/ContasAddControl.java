@@ -46,20 +46,34 @@ public class ContasAddControl {
             listaDeContas = new LinkedList<Conta>();
 
             if(selected == RadioCorrente){
-                listaDeContas.add(new ContaCorrente(0.0, 10.0));
-                origem.addContaNoListView(listaDeContas.getLast().getID());
+                ContaCorrente contaCorrente = new ContaCorrente(0.0, 10.0);
+                listaDeContas.add(contaCorrente);
+                origem.addContaNoListView(contaCorrente.getID());
+                origem.addContaNoHash(contaCorrente);
+                origem.addContaNoBanco(contaCorrente);
+
             }else{
-                listaDeContas.add(new ContaPoupanca(0.0, 5.0));
-                origem.addContaNoListView(listaDeContas.getLast().getID());
+                ContaPoupanca contaPoupanca = new ContaPoupanca(0.0, 10.0);
+                listaDeContas.add(contaPoupanca);
+                origem.addContaNoListView(contaPoupanca.getID());
+                origem.addContaNoHash(contaPoupanca);
+                origem.addContaNoBanco(contaPoupanca);
             }
 
         }else{
             if(selected == RadioCorrente){
-                listaDeContas.add(new ContaCorrente(0.0, 10.0));
-                origem.addContaNoListView(listaDeContas.getLast().getID());
+                ContaCorrente contaCorrente = new ContaCorrente(0.0, 10.0);
+                listaDeContas.add(contaCorrente);
+                origem.addContaNoListView(contaCorrente.getID());
+                origem.addContaNoHash(contaCorrente);
+                origem.addContaNoBanco(contaCorrente);
+
             }else{
-                listaDeContas.add(new ContaPoupanca(0.0, 5.0));
-                origem.addContaNoListView(listaDeContas.getLast().getID());
+                ContaPoupanca contaPoupanca = new ContaPoupanca(0.0, 10.0);
+                listaDeContas.add(contaPoupanca);
+                origem.addContaNoListView(contaPoupanca.getID());
+                origem.addContaNoHash(contaPoupanca);
+                origem.addContaNoBanco(contaPoupanca);
             }
         }
 

@@ -1,23 +1,24 @@
 package trab.poo1_trab_banco.models;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
 import java.util.UUID;
 
 public abstract class Conta implements Serializable {
     protected UUID numIdentificacao;
-    protected ZonedDateTime dtCriacao;
+    protected LocalDate dtCriacao;
     protected double saldo;
-    protected ZonedDateTime ultimoAcesso;
+    protected LocalDate ultimoAcesso;
     protected LinkedList<Cupom> cupons;
     protected LinkedList<OpBancaria> operacoes;
 
     public Conta(double saldo) {
-        this.dtCriacao = ZonedDateTime.now();
+        this.dtCriacao = LocalDate.now();
         this.saldo = saldo;
         this.numIdentificacao = UUID.randomUUID();
-        this.ultimoAcesso = ZonedDateTime.now();
+        this.ultimoAcesso = LocalDate.now();
         this.cupons = new LinkedList<>();
         this.operacoes = new LinkedList<>();
     }
@@ -26,11 +27,11 @@ public abstract class Conta implements Serializable {
         return numIdentificacao.toString();
     }
 
-    public ZonedDateTime getDtCriacao() {
+    public LocalDate getDtCriacao() {
         return dtCriacao;
     }
 
-    public void setDtCriacao(ZonedDateTime dtCriacao) {
+    public void setDtCriacao(LocalDate dtCriacao) {
         this.dtCriacao = dtCriacao;
     }
 
@@ -42,11 +43,11 @@ public abstract class Conta implements Serializable {
         this.saldo = saldo;
     }
 
-    public ZonedDateTime getUltimoAcesso() {
+    public LocalDate getUltimoAcesso() {
         return ultimoAcesso;
     }
 
-    public void setUltimoAcesso(ZonedDateTime ultimoAcesso) {
+    public void setUltimoAcesso(LocalDate ultimoAcesso) {
         this.ultimoAcesso = ultimoAcesso;
     }
 
@@ -58,7 +59,7 @@ public abstract class Conta implements Serializable {
         if (valor <= this.saldo) {
             this.saldo -= valor;
             operacoes.add(new OpBancaria(tipo, descricao, valor, numIdentificacao));
-            this.ultimoAcesso = ZonedDateTime.now();
+            this.ultimoAcesso = LocalDate.now();
             if (valor > 5000) {
                 cupons.add(new Cupom());
             }
@@ -68,7 +69,7 @@ public abstract class Conta implements Serializable {
     public void depositar(double valor, String tipo, String descricao) {
         this.saldo += valor;
         operacoes.add(new OpBancaria(tipo, descricao, valor, numIdentificacao));
-        this.ultimoAcesso = ZonedDateTime.now();
+        this.ultimoAcesso = LocalDate.now();
         if (valor > 5000) {
             cupons.add(new Cupom());
         }

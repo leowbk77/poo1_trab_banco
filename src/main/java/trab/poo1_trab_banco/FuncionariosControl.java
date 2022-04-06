@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import trab.poo1_trab_banco.models.*;
 
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -47,6 +48,8 @@ public class FuncionariosControl {
     Label labelinfo5;
     @FXML
     Label labelinfo6;
+    @FXML
+    Label labelinfo7;
 
     @FXML
     public void telaDeAdicao(ActionEvent event) throws IOException {
@@ -129,9 +132,12 @@ public class FuncionariosControl {
     @FXML
     private void loadInfos(String item){
         Funcionario tempFuncionario = mapaDeFuncionarios.get(item);
+        String admissao = tempFuncionario.getAdmissao().format(DateTimeFormatter.ISO_DATE);
         labelinfo2.setText(tempFuncionario.getNome());
         labelinfo3.setText(tempFuncionario.getFone());
 //        labelinfo4.setText(tempFuncionario.getSupervisor().getNome());
+        labelinfo5.setText(admissao);
+        labelinfo7.setText(tempFuncionario.getTempoServico() + " ano(s)");
 //        labelinfo6.setText(tempFuncionario.getAgencia().getNome());
     }
 

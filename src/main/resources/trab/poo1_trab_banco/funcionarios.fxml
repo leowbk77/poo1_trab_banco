@@ -49,6 +49,11 @@
                      <padding>
                         <Insets left="10.0" />
                      </padding></Label>
+                        <Separator prefWidth="200.0" />
+                        <Label fx:id="labelinfo7" prefHeight="40.0" prefWidth="381.0" text="Tempo serviço (anos)">
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding></Label>
                     </children></VBox>
                 <Button fx:id="loadBtn" layoutX="739.0" layoutY="559.0" mnemonicParsing="false" onAction="#loadBtnAct" text="Show" />
             <Button fx:id="loadFromFileBtn" layoutX="484.0" layoutY="559.0" mnemonicParsing="false" onAction="#fileLoad" text="LoadFromFile" />

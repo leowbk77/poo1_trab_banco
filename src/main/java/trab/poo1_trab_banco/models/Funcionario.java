@@ -1,8 +1,7 @@
 package trab.poo1_trab_banco.models;
 
 import java.io.Serializable;
-import java.time.ZonedDateTime;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.UUID;
 
@@ -12,10 +11,10 @@ public class Funcionario extends Pessoa implements Serializable {
     protected LinkedList<String> dependentes;
     protected Funcionario supervisor;
     protected int tempoServico;
-    protected Date admissao;
+    protected LocalDate admissao;
     protected Agencia agencia;
 
-    public Funcionario(String nome, String cpf, String fone, Date admissao, int tempoServico, Agencia agencia){
+    public Funcionario(String nome, String cpf, String fone, LocalDate admissao, int tempoServico, Agencia agencia){
         super(nome, cpf);
         this.numFuncional = UUID.randomUUID();
         this.fone = fone;
@@ -51,18 +50,18 @@ public class Funcionario extends Pessoa implements Serializable {
     }
 
     public int getTempoServico() {
-        return tempoServico;
+        return LocalDate.now().getYear() - this.admissao.getYear();
     }
 
     public void setTempoServico(int tempoServico) {
         this.tempoServico = tempoServico;
     }
 
-    public Date getAdmissao() {
+    public LocalDate getAdmissao() {
         return admissao;
     }
 
-    public void setAdmissao(Date admissao) {
+    public void setAdmissao(LocalDate admissao) {
         this.admissao = admissao;
     }
 

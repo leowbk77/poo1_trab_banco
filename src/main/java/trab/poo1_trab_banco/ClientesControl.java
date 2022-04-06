@@ -12,6 +12,7 @@ import trab.poo1_trab_banco.models.Banco;
 import trab.poo1_trab_banco.models.Cliente;
 
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -117,8 +118,10 @@ public class ClientesControl {
     @FXML
     private void loadInfos(String item){
         Cliente tempCliente = mapaDeClientes.get(item);
+        String nasc = tempCliente.getNascimento().format(DateTimeFormatter.ISO_DATE);
         labelinfo2.setText(tempCliente.getNome());
         labelinfo3.setText(tempCliente.getCpf());
+        labelinfo4.setText(nasc);
         labelinfo5.setText(tempCliente.getEnderecoCliente().getEndToString());
     }
 

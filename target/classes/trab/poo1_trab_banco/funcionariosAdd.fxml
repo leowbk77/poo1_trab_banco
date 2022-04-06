@@ -30,7 +30,7 @@
                             </children></HBox>
                         <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
                             <children>
-                                <Label fx:id="labelinfoAdd3" text="Nascimento" />
+                                <Label fx:id="labelinfoAdd3" text="Admissão" />
                                 <DatePicker fx:id="dataPick">
                                     <HBox.margin>
                                         <Insets left="30.0" />
@@ -50,7 +50,6 @@
                      </children></HBox>
                     </children></VBox>
                 <Button fx:id="botaoAdd2" layoutX="500.0" layoutY="556.0" mnemonicParsing="false" onAction="#adicionaFuncionario" text="Adiciona" />
-                <Button layoutX="200.0" layoutY="559.0" mnemonicParsing="false" onAction="#printaFuncionario" text="printa" />
             </children></AnchorPane>
     </children>
 </HBox>

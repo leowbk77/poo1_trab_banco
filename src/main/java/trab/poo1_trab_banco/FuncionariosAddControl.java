@@ -43,7 +43,7 @@ public class FuncionariosAddControl {
         Funcionario novoFuncionario = new Funcionario(campoDeNome.getText(),
                                                     campoDeCPF.getText(),
                                                     campoDeFone.getText(),
-                                                    new Date(),
+                                                    dataPick.getValue(),
                                                     0,
                                                     origem.pegarAgenciaFic());
         origem.addFuncionarioNoBanco(novoFuncionario);
