@@ -10,6 +10,7 @@ import trab.poo1_trab_banco.models.Funcionario;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.LinkedList;
 
 public class FuncionariosAddControl {
@@ -42,7 +43,7 @@ public class FuncionariosAddControl {
         Funcionario novoFuncionario = new Funcionario(campoDeNome.getText(),
                                                     campoDeCPF.getText(),
                                                     campoDeFone.getText(),
-                                                    ZonedDateTime.now(),
+                                                    new Date(),
                                                     0,
                                                     origem.pegarAgenciaFic());
         origem.addFuncionarioNoBanco(novoFuncionario);

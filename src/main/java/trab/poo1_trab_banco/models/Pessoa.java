@@ -2,11 +2,12 @@ package trab.poo1_trab_banco.models;
 
 import java.io.Serializable;
 import java.time.ZonedDateTime;
+import java.util.Date;
 
 public abstract class Pessoa implements Serializable {
     protected String nome;
     protected String cpf;
-    protected ZonedDateTime nascimento;
+    protected Date nascimento;
 
     public Pessoa(String nome, String cpf){
         this.nome = nome;
@@ -21,7 +22,7 @@ public abstract class Pessoa implements Serializable {
         this.cpf = cpf;
     }
 
-    public void setNascimento(ZonedDateTime nascimento) {
+    public void setNascimento(Date nascimento) {
         this.nascimento = nascimento;
     }
 
@@ -33,7 +34,7 @@ public abstract class Pessoa implements Serializable {
         return cpf;
     }
 
-    public ZonedDateTime getNascimento() {
+    public Date getNascimento() {
         return nascimento;
     }
 

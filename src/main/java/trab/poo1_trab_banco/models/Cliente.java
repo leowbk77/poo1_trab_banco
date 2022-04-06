@@ -2,6 +2,7 @@ package trab.poo1_trab_banco.models;
 
 import java.io.Serializable;
 import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.UUID;
 
@@ -11,7 +12,7 @@ public class Cliente extends Pessoa implements Serializable {
     private Gerente gerente;
     private LinkedList<Conta> contas;
 
-    public Cliente(String nome, String cpf, ZonedDateTime nascimento, String cidade, String estado, String endereco){
+    public Cliente(String nome, String cpf, Date nascimento, String cidade, String estado, String endereco){
         super(nome, cpf);
         super.nascimento = nascimento;
         enderecoCliente = new Endereco(cidade, estado, endereco);

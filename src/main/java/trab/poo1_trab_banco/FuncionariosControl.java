@@ -34,6 +34,8 @@ public class FuncionariosControl {
     @FXML
     Button saveToFileBtn;
     @FXML
+    Button reloadBtn;
+    @FXML
     ListView<String> listaDeFuncionariosView;
     @FXML
     Label labelinfo2;
@@ -102,7 +104,6 @@ public class FuncionariosControl {
 
     @FXML
     public void populate(){
-        // se o listview for nulo a tela é nova
         // se a lista de clientes estiver vazia nao ha o que popular no listview
         if(banco.numeroDeFuncionarios() != 0){
             LinkedList<Funcionario> funcionariosDoBanco = banco.getFuncionarios();
@@ -152,7 +153,7 @@ public class FuncionariosControl {
     @FXML
     public void fileLoad(ActionEvent event) throws IOException {
         banco.readFuncionariosFromFile();
-        populate();
+        //populate();
     }
 
 }

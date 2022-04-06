@@ -33,6 +33,8 @@ public class ClientesControl {
     @FXML
     Button saveToFile;
     @FXML
+    Button reloadBtn;
+    @FXML
     ListView<String> listaDeClientesView;
     @FXML
     Label labelinfo2;
@@ -127,6 +129,6 @@ public class ClientesControl {
     @FXML
     public void fileLoad(ActionEvent event) throws IOException {
         banco.readClientesFromFile();
-        populate();
+        //populate();
     }
 }

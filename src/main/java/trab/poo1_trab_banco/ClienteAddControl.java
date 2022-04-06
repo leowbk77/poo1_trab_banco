@@ -9,6 +9,7 @@ import trab.poo1_trab_banco.models.Cliente;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.LinkedList;
 
 public class ClienteAddControl {
@@ -42,7 +43,7 @@ public class ClienteAddControl {
     public void adicionaCliente(ActionEvent event) throws IOException {
         Cliente novoCliente = new Cliente(campoDeNome.getText(),
                                             campoDeCPF.getText(),
-                                            ZonedDateTime.now(),
+                                            new Date(),
                                             campoDeCidade.getText(),
                                             campoDeEstado.getText(),
                                             campoDeEndereco.getText());
