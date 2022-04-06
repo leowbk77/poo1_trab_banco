@@ -35,4 +35,9 @@ public abstract class Pessoa {
     public ZonedDateTime getNascimento() {
         return nascimento;
     }
+
+    public void imprimePessoa() {
+        System.out.printf("Nome: %s\n", this.getNome());
+        System.out.printf("CPF: %s\n", this.getCpf());
+    };
 }
