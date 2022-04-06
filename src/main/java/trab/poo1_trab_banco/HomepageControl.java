@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import trab.poo1_trab_banco.models.Banco;
 
 import java.io.IOException;
 
@@ -18,6 +19,10 @@ public class HomepageControl {
     @FXML
     private ContasControl controladorDoContas;
 
+    // referencia do banco para acesso aos dados
+    @FXML
+    private Banco banco;
+
     // HOMEPAGE.FXML
     @FXML
     Button botao1;
@@ -25,13 +30,21 @@ public class HomepageControl {
     Button botao2;
     @FXML
     Button botao3;
-    
+
+    @FXML
+    public void setBanco(Banco banco){
+        this.banco = banco;
+    }
+
     @FXML
     public void ir_para_clientes(ActionEvent event) throws IOException{
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("clientes.fxml"));
 
             Scene cena = new Scene(fxmlLoader.load(), 800, 600);
+
+            ClientesControl controladorDaClientes = fxmlLoader.getController();
+            controladorDaClientes.setBanco(banco);
 
             Stage stage1 = new Stage();
             stage1.setTitle("Clientes");

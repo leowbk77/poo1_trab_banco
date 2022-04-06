@@ -47,4 +47,8 @@ public class Endereco {
         return endereco;
     }
 
+    public String getEndToString(){
+        return cidade + " - " + estado + " " + endereco;
+    }
+
 }

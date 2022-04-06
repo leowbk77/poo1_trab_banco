@@ -16,6 +16,11 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("homepage.fxml"));
 
         Scene cena = new Scene(fxmlLoader.load(), 800, 600);
+
+        Banco banco = new Banco(); // cria o banco na memoria
+        HomepageControl controladorPrincipal = fxmlLoader.getController();
+        controladorPrincipal.setBanco(banco); // passa para a interface a referencia do banco para acesso aos dados
+
         stage.setTitle("22Bank");
         stage.setScene(cena);
 
@@ -23,6 +28,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        /*
         ArrayList<Agencia> agencias = new ArrayList<>();
         ArrayList<Cliente> clientes = new ArrayList<>();
         ArrayList<Funcionario> funcionarios = new ArrayList<>();
@@ -64,6 +70,7 @@ public class Main extends Application {
 
         cliente1.criarContaCorrente(1500, 15);
         cliente1.getContas().getFirst().imprimeConta();
+         */
 
         // comentar a linha do launch para impedir de rodar a UI
         launch();

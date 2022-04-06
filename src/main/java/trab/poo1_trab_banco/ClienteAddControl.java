@@ -13,7 +13,7 @@ import java.util.LinkedList;
 
 public class ClienteAddControl {
     // temporario
-    private LinkedList<Cliente> listaTempDeClientes;
+    //private LinkedList<Cliente> listaTempDeClientes;
 
     //clientesAdd.fxml
     @FXML
@@ -42,6 +42,18 @@ public class ClienteAddControl {
 
     @FXML
     public void adicionaCliente(ActionEvent event) throws IOException {
+        Cliente novoCliente = new Cliente(campoDeNome.getText(),
+                                            campoDeCPF.getText(),
+                                            ZonedDateTime.now(),
+                                            campoDeCidade.getText(),
+                                            campoDeEstado.getText(),
+                                            campoDeEndereco.getText());
+        origem.addClienteNoBanco(novoCliente);
+        origem.addClienteNoHash(novoCliente);
+        origem.addClienteNoListView(novoCliente.getNome());
+
+
+        /* CODIGO ANTIGO
         if(listaTempDeClientes == null){
             listaTempDeClientes = new LinkedList<Cliente>();
             listaTempDeClientes.add(new Cliente(campoDeNome.getText(),
@@ -63,11 +75,14 @@ public class ClienteAddControl {
 
             origem.addClienteNoListView(listaTempDeClientes.getLast().getNome());
         }
+         */
     }
 
+    /* DEIXOU DE SER USAVEL
     @FXML
     public void printaCliente(ActionEvent event) throws IOException {
         listaTempDeClientes.getLast().imprimeCliente();
     }
+     */
 
 }

@@ -8,16 +8,27 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
+import trab.poo1_trab_banco.models.Banco;
+import trab.poo1_trab_banco.models.Cliente;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.LinkedList;
 
 public class ClientesControl {
+    // referencia do banco para acesso aos dados
+    @FXML
+    private Banco banco;
+
     // temporario
     // private LinkedList<Cliente> listaTempDeClientes;
+    private HashMap<String, Cliente> mapaDeClientes;
 
     // clientes.fxml
     @FXML
     Button botao1;
+    @FXML
+    Button loadBtn;
     @FXML
     ListView<String> listaDeClientesView;
     @FXML
@@ -58,4 +69,53 @@ public class ClientesControl {
             listaDeClientesView.getItems().add(nome);
         }
     }
+
+    @FXML
+    public void addClienteNoHash(Cliente cliente){
+        if(mapaDeClientes == null){
+            mapaDeClientes = new HashMap<String, Cliente>();
+            mapaDeClientes.put(cliente.getNome(), cliente);
+        }else{
+            mapaDeClientes.put(cliente.getNome(), cliente);
+        }
+    }
+
+    @FXML
+    public void addClienteNoBanco(Cliente cliente){
+        banco.add_cliente(cliente);
+    }
+
+    @FXML
+    public void populate(){
+        // se o listview for nulo a tela é nova
+        // se a lista de clientes estiver vazia nao ha o que popular no listview
+        if((listaDeClientesView == null) && (banco.numeroDeClientes() != 0)){
+            LinkedList<Cliente> clientesDoBanco = banco.getClientes();
+            listaDeClientesView = new ListView<String>();
+            for(Cliente e : clientesDoBanco){
+                listaDeClientesView.getItems().add(e.getNome());
+                addClienteNoHash(e);
+            }
+        }
+    }
+
+    @FXML
+    public void loadBtnAct(ActionEvent event) throws IOException {
+        String itemSelecionado =  listaDeClientesView.getSelectionModel().getSelectedItem();
+        loadInfos(itemSelecionado);
+    }
+
+    @FXML
+    private void loadInfos(String item){
+        Cliente tempCliente = mapaDeClientes.get(item);
+        labelinfo2.setText(tempCliente.getNome());
+        labelinfo3.setText(tempCliente.getCpf());
+        labelinfo5.setText(tempCliente.getEnderecoCliente().getEndToString());
+    }
+
+    @FXML
+    public void setBanco(Banco banco){
+        this.banco = banco;
+    }
+
 }

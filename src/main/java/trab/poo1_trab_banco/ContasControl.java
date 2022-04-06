@@ -8,13 +8,15 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import trab.poo1_trab_banco.models.Agencia;
+import trab.poo1_trab_banco.models.Banco;
 import trab.poo1_trab_banco.models.Endereco;
 
 import java.io.IOException;
 import java.util.LinkedList;
 
 public class ContasControl {
-    // temp
+    @FXML
+    private Banco banco;
 
     // contas.fxml
     @FXML
@@ -54,6 +56,11 @@ public class ContasControl {
         }catch (IOException e){
             System.out.println("EXCEPTION" + e.getMessage());
         }
+    }
+
+    @FXML
+    public void setBanco(Banco banco){
+        this.banco = banco;
     }
 
     @FXML

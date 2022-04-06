@@ -9,12 +9,17 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import trab.poo1_trab_banco.models.Agencia;
+import trab.poo1_trab_banco.models.Banco;
 import trab.poo1_trab_banco.models.Endereco;
 
 import java.io.IOException;
 import java.util.LinkedList;
 
 public class FuncionariosControl {
+    // referencia do banco para acesso aos dados
+    @FXML
+    private Banco banco;
+
     // temp
     private LinkedList<Agencia> ListaDeAgencias;
 
@@ -71,6 +76,11 @@ public class FuncionariosControl {
         }else{
             listaDeFuncionariosView.getItems().add(nome);
         }
+    }
+
+    @FXML
+    public void setBanco(Banco banco){
+        this.banco = banco;
     }
 
     @FXML
