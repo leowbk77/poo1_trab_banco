@@ -1,6 +1,7 @@
 package trab.poo1_trab_banco.models;
 
 import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.UUID;
 
@@ -10,10 +11,10 @@ public class Funcionario extends Pessoa{
     protected LinkedList<String> dependentes;
     protected Funcionario supervisor;
     protected int tempoServico;
-    protected ZonedDateTime admissao;
+    protected Date admissao;
     protected Agencia agencia;
 
-    public Funcionario(String nome, String cpf, String fone, ZonedDateTime admissao, int tempoServico, Agencia agencia){
+    public Funcionario(String nome, String cpf, String fone, Date admissao, int tempoServico, Agencia agencia){
         super(nome, cpf);
         this.numFuncional = UUID.randomUUID();
         this.fone = fone;
@@ -56,11 +57,11 @@ public class Funcionario extends Pessoa{
         this.tempoServico = tempoServico;
     }
 
-    public ZonedDateTime getAdmissao() {
+    public Date getAdmissao() {
         return admissao;
     }
 
-    public void setAdmissao(ZonedDateTime admissao) {
+    public void setAdmissao(Date admissao) {
         this.admissao = admissao;
     }
 
