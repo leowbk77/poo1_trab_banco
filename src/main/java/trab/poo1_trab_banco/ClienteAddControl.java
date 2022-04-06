@@ -78,11 +78,11 @@ public class ClienteAddControl {
          */
     }
 
-    /* DEIXOU DE SER USAVEL
+    //DEIXOU DE SER USAVEL
     @FXML
     public void printaCliente(ActionEvent event) throws IOException {
-        listaTempDeClientes.getLast().imprimeCliente();
+        //listaTempDeClientes.getLast().imprimeCliente();
+        System.out.println("Nada a declarar");
     }
-     */
 
 }
