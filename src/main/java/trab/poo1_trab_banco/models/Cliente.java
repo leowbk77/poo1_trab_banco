@@ -1,10 +1,11 @@
 package trab.poo1_trab_banco.models;
 
+import java.io.Serializable;
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
 import java.util.UUID;
 
-public class Cliente extends Pessoa{
+public class Cliente extends Pessoa implements Serializable {
     private UUID id;
     private Endereco enderecoCliente;
     private Gerente gerente;

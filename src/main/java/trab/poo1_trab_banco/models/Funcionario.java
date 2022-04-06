@@ -1,10 +1,11 @@
 package trab.poo1_trab_banco.models;
 
+import java.io.Serializable;
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
 import java.util.UUID;
 
-public class Funcionario extends Pessoa{
+public class Funcionario extends Pessoa implements Serializable {
     protected UUID numFuncional;
     protected String fone;
     protected LinkedList<String> dependentes;

@@ -1,8 +1,9 @@
 package trab.poo1_trab_banco.models;
 
+import java.io.Serializable;
 import java.time.ZonedDateTime;
 
-public class Gerente extends Funcionario{
+public class Gerente extends Funcionario implements Serializable {
     public Gerente(String nome, String cpf, String fone, ZonedDateTime admissao, int tempoServico, Agencia agencia) {
         super(nome, cpf, fone, admissao, tempoServico, agencia);
     }

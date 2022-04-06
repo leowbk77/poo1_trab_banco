@@ -30,7 +30,11 @@ public class FuncionariosControl {
     @FXML
     Button loadBtn;
     @FXML
-    ListView<String> listaDeFuncionariosView; // isso aqui vai se tornar uma lista de funcionarios (String temporario para facilitar exibicao)
+    Button loadFromFileBtn;
+    @FXML
+    Button saveToFileBtn;
+    @FXML
+    ListView<String> listaDeFuncionariosView;
     @FXML
     Label labelinfo2;
     @FXML
@@ -138,6 +142,17 @@ public class FuncionariosControl {
     @FXML
     public Agencia pegarAgenciaFic(){
         return ListaDeAgencias.getLast();
+    }
+
+    @FXML
+    public void fileSave(ActionEvent event) throws IOException {
+        banco.writeFuncionariosToFile();
+    }
+
+    @FXML
+    public void fileLoad(ActionEvent event) throws IOException {
+        banco.readFuncionariosFromFile();
+        populate();
     }
 
 }

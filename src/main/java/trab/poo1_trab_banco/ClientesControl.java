@@ -20,8 +20,6 @@ public class ClientesControl {
     @FXML
     private Banco banco;
 
-    // temporario
-    // private LinkedList<Cliente> listaTempDeClientes;
     // mapa de clientes para exibir
     private HashMap<String, Cliente> mapaDeClientes;
 
@@ -30,6 +28,10 @@ public class ClientesControl {
     Button botao1;
     @FXML
     Button loadBtn;
+    @FXML
+    Button loadFromFile;
+    @FXML
+    Button saveToFile;
     @FXML
     ListView<String> listaDeClientesView;
     @FXML
@@ -88,8 +90,6 @@ public class ClientesControl {
 
     @FXML
     public void populate(){
-        // se o listview for nulo a tela é nova
-        // se a lista de clientes estiver vazia nao ha o que popular no listview
         if(banco.numeroDeClientes() != 0){
             LinkedList<Cliente> clientesDoBanco = banco.getClientes();
 
@@ -119,4 +119,14 @@ public class ClientesControl {
         this.banco = banco;
     }
 
+    @FXML
+    public void fileSave(ActionEvent event) throws IOException {
+        banco.writeClientesToFile();
+    }
+
+    @FXML
+    public void fileLoad(ActionEvent event) throws IOException {
+        banco.readClientesFromFile();
+        populate();
+    }
 }

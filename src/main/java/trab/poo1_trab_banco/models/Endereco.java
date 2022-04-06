@@ -1,6 +1,8 @@
 package trab.poo1_trab_banco.models;
 
-public class Endereco {
+import java.io.Serializable;
+
+public class Endereco implements Serializable {
     private String cidade;
     private String estado;
     private String endereco;

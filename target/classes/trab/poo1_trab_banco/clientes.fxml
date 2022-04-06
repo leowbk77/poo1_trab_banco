@@ -45,7 +45,9 @@
                      </padding>
                   </Label>
                </children></VBox>
-            <Button fx:id="loadBtn" onAction="#loadBtnAct" layoutX="343.0" layoutY="559.0" mnemonicParsing="false" text="Load" />
+            <Button fx:id="loadBtn" layoutX="741.0" layoutY="559.0" mnemonicParsing="false" onAction="#loadBtnAct" text="Show" />
+            <Button fx:id="saveToFile" layoutX="224.0" layoutY="559.0" mnemonicParsing="false" onAction="#fileSave" text="SaveToFile" />
+            <Button fx:id="loadFromFile" layoutX="307.0" layoutY="559.0" mnemonicParsing="false" onAction="#fileLoad" text="LoadFromFile" />
          </children>
       </AnchorPane>
    </children>

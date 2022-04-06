@@ -11,13 +11,6 @@ import trab.poo1_trab_banco.models.Banco;
 import java.io.IOException;
 
 public class HomepageControl {
-    // Referencias para os controladores das telas? (talvez necessario para o futuro)
-    @FXML
-    private ClientesControl contraladorDoClientes;
-    @FXML
-    private FuncionariosControl controladorDoFuncionarios;
-    @FXML
-    private ContasControl controladorDoContas;
 
     // referencia do banco para acesso aos dados
     @FXML
@@ -45,7 +38,7 @@ public class HomepageControl {
 
             ClientesControl controladorDaClientes = fxmlLoader.getController();
             controladorDaClientes.setBanco(banco);
-            controladorDaClientes.populate();
+            //controladorDaClientes.populate();
 
             Stage stage1 = new Stage();
             stage1.setTitle("Clientes");
@@ -66,7 +59,7 @@ public class HomepageControl {
 
             FuncionariosControl controladorDeFuncionarios = fxmlLoader.getController();
             controladorDeFuncionarios.setBanco(banco);
-            controladorDeFuncionarios.populate();
+            //controladorDeFuncionarios.populate();
 
             Stage stage1 = new Stage();
             stage1.setTitle("Funcionarios");
@@ -85,6 +78,9 @@ public class HomepageControl {
 
             Scene cena = new Scene(fxmlLoader.load(), 800, 600);
 
+            ContasControl controladorDeContas = fxmlLoader.getController();
+            controladorDeContas.setBanco(banco);
+
             Stage stage1 = new Stage();
             stage1.setTitle("Contas");
             stage1.setScene(cena);
@@ -94,26 +90,3 @@ public class HomepageControl {
         }
     }
 }
-
-        /* PULA A JANELA - !!!! DESCONSIDERAR !!!!
-        parent = FXMLLoader.load(getClass().getResource("Tela-teste.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(parent, 800,600);
-        stage.setScene(scene);
-        stage.show();
-        */
-
-        /* PULA A JANELA
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("testecomunicacao.fxml"));
-        parent = loader.load();
-
-        Comunicacaocontrol controladorteste = loader.getController();
-        System.out.println(controladorteste.textoAntigo());
-
-        controladorteste.textoChange("NovoTexto");
-
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(parent, 800, 600);
-        stage.setScene(scene);
-        stage.show();
-         */

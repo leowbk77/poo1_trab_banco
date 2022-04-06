@@ -1,8 +1,9 @@
 package trab.poo1_trab_banco.models;
 
+import java.io.Serializable;
 import java.time.ZonedDateTime;
 
-public abstract class Pessoa {
+public abstract class Pessoa implements Serializable {
     protected String nome;
     protected String cpf;
     protected ZonedDateTime nascimento;

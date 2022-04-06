@@ -1,6 +1,8 @@
 package trab.poo1_trab_banco.models;
 
-public class Agencia {
+import java.io.Serializable;
+
+public class Agencia implements Serializable {
     private String nome;
     private Endereco endereco;
 

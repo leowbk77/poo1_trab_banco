@@ -12,8 +12,6 @@ import java.time.ZonedDateTime;
 import java.util.LinkedList;
 
 public class ClienteAddControl {
-    // temporario
-    //private LinkedList<Cliente> listaTempDeClientes;
 
     //clientesAdd.fxml
     @FXML
@@ -51,37 +49,10 @@ public class ClienteAddControl {
         origem.addClienteNoBanco(novoCliente);
         origem.addClienteNoHash(novoCliente);
         origem.addClienteNoListView(novoCliente.getNome());
-
-
-        /* CODIGO ANTIGO
-        if(listaTempDeClientes == null){
-            listaTempDeClientes = new LinkedList<Cliente>();
-            listaTempDeClientes.add(new Cliente(campoDeNome.getText(),
-                                                campoDeCPF.getText(),
-                                                ZonedDateTime.now(),
-                                                campoDeCidade.getText(),
-                                                campoDeEstado.getText(),
-                                                campoDeEndereco.getText()));
-
-            origem.addClienteNoListView(listaTempDeClientes.getLast().getNome());
-
-        }else{
-            listaTempDeClientes.add(new Cliente(campoDeNome.getText(),
-                                                campoDeCPF.getText(),
-                                                ZonedDateTime.now(),
-                                                campoDeCidade.getText(),
-                                                campoDeEstado.getText(),
-                                                campoDeEndereco.getText()));
-
-            origem.addClienteNoListView(listaTempDeClientes.getLast().getNome());
-        }
-         */
     }
 
-    //DEIXOU DE SER USAVEL
     @FXML
     public void printaCliente(ActionEvent event) throws IOException {
-        //listaTempDeClientes.getLast().imprimeCliente();
         System.out.println("Nada a declarar");
     }
 

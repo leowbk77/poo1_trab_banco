@@ -7,14 +7,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
-import trab.poo1_trab_banco.models.Agencia;
-import trab.poo1_trab_banco.models.Banco;
-import trab.poo1_trab_banco.models.Endereco;
+import trab.poo1_trab_banco.models.*;
 
 import java.io.IOException;
-import java.util.LinkedList;
 
 public class ContasControl {
+    // referencia do banco para acesso aos dados
     @FXML
     private Banco banco;
 

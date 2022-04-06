@@ -1,10 +1,11 @@
 package trab.poo1_trab_banco.models;
 
+import java.io.Serializable;
 import java.time.ZonedDateTime;
 import java.util.LinkedList;
 import java.util.UUID;
 
-public abstract class Conta {
+public abstract class Conta implements Serializable {
     protected UUID numIdentificacao;
     protected ZonedDateTime dtCriacao;
     protected double saldo;
