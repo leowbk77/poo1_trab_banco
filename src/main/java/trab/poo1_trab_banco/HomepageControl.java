@@ -45,6 +45,7 @@ public class HomepageControl {
 
             ClientesControl controladorDaClientes = fxmlLoader.getController();
             controladorDaClientes.setBanco(banco);
+            controladorDaClientes.populate();
 
             Stage stage1 = new Stage();
             stage1.setTitle("Clientes");

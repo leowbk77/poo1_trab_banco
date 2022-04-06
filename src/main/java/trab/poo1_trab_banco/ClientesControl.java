@@ -89,10 +89,15 @@ public class ClientesControl {
     public void populate(){
         // se o listview for nulo a tela é nova
         // se a lista de clientes estiver vazia nao ha o que popular no listview
-        if((listaDeClientesView == null) && (banco.numeroDeClientes() != 0)){
+        if(banco.numeroDeClientes() != 0){
+            System.out.println("passei pelo if");
+
             LinkedList<Cliente> clientesDoBanco = banco.getClientes();
+
             listaDeClientesView = new ListView<String>();
+
             for(Cliente e : clientesDoBanco){
+                System.out.println("for");
                 listaDeClientesView.getItems().add(e.getNome());
                 addClienteNoHash(e);
             }

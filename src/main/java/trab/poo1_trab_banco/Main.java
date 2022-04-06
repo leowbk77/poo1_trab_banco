@@ -28,7 +28,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-//
+
 //        ArrayList<Agencia> agencias = new ArrayList<>();
 //        ArrayList<Cliente> clientes = new ArrayList<>();
 //        ArrayList<Funcionario> funcionarios = new ArrayList<>();
@@ -81,6 +81,6 @@ public class Main extends Application {
 //        cliente1.getContas().get(1).imprimeConta();
 
         // comentar a linha do launch para impedir de rodar a UI
-        // launch();
+        launch();
     }
 }
